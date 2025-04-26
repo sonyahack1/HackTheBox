@@ -1,6 +1,9 @@
 
 ---
 
+**Author:** sonyahack1
+**Date:** 17.04.2025
+
 ## Summary
 
 - Foothold: CVE:2019-9053 in CMS Made Simple 2.2.10

@@ -1,8 +1,9 @@
 
-# Writeup
+# Writeup - Linux
 
 ## Difficulty - Easy
-## Linux
+
+---
 
 > Writeup is an easy difficulty Linux box with DoS protection in place to prevent brute forcing.
 > A CMS susceptible to a SQL injection vulnerability is found, which is leveraged to gain user credentials.
@@ -11,6 +12,10 @@
 
 ---
 
-> Skill required -
-> Skill Learned -
+> Skill required:
+- web enumeration
+- Linux fundamentals
+
+> Skill Learned:
+- path hijacking technique
 
