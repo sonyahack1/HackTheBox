@@ -1,7 +1,12 @@
 # Hack The Box Writeups
 
+<img src="./screenshots/hackthebox_logo.png" alt="Logo"/>
+
+---
 Welcome to my personal collection of writeups for machines and challenges on [Hack The Box](https://hackthebox.com/).
 Each writeup includes my thought process, tools used, exploitation steps, and post-exploitation notes.
+
+Periodically I will return to the laboratories and machines I have completed and make any changes or improvements to my solutions.
 
 ---
 
