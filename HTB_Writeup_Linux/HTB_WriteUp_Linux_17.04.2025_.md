@@ -1,8 +1,8 @@
 
 ---
 
-**Author:** sonyahack1
-**Date:** 17.04.2025
+- **Author:** sonyahack1
+- **Date:** 17.04.2025
 
 ## Summary
 
