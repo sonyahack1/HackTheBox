@@ -33,6 +33,7 @@ echo "10.10.11.189 precious.htb" | sudo tee -a /etc/hosts
 sudo nmap -sVC -p- -v -T5 precious.htb -oN PreciousNmap
 
 ```
+> Result:
 
 ```bash
 
@@ -87,7 +88,7 @@ UncommonHeaders[x-content-type-options], X-Frame-Options[SAMEORIGIN],X-Powered-B
 > library itself does not perform url/HTML conversion, but it serves as a kind of "wrapper" in Rails and its task is to transmit commands. The conversion
 > process itself is performed by a utility **"wkhtmltopdf"** which is installed separately on the server. It works through the **WebKit** engine.
 
-> Simply put, the whole process looks like this: ** request -> pdfkit (Rails) -> wkhtmltopdf -> File.pdf -> Rails -> response **
+> Simply put, the whole process looks like this: **request -> pdfkit (Rails) -> wkhtmltopdf -> File.pdf -> Rails -> response**
 
 ![pdfkit](./screenshots/pdfkit.png)
 
@@ -152,8 +153,9 @@ ruby@precious:/var/www/pdfapp$ find / -name config 2>/dev/null
 
 ```
 
-```bash
+> found a config file in the Ruby user's home directory:
 
+```bash
 
 ruby@precious:/var/www/pdfapp$ cat /home/ruby/.bundle/config
 ---
@@ -270,7 +272,7 @@ end
 YAML.load(File.read("dependencies.yml"))
 
 ```
-> **file.read** - reads data from a file with dependencies, and YAML.load deserializes this data into Ruby objects.
+> **file.read** - reads data from a file with dependencies, and **YAML.load** deserializes this data into Ruby objects.
 > the deserialization method itself is not safe, since it allows you to restore any Ruby objects, including built-in classes, such as **Gem::Installer**
 > and during the initialization process, call methods that some code executes.
 
