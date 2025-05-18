@@ -566,7 +566,7 @@ ae98930d57f5c9aaa794ff930dd9c5fc
 > By exploiting this vulnerability, the system was `compromised`.
 
 <p align="center">
-  <img src="./screenshots/solved_machine.png" alt="solved_mschine" width="400"/>
+  <img src="./screenshots/solved_machine.png" alt="solved_mschine"/>
 </p>
 
 ---
