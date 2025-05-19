@@ -108,7 +108,7 @@ ffuf -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -u '
 
 ![domain](./screenshots/domain.png)
 
-> I found my own hostname `board.htb`.
+> I found the host hostname `board.htb`.
 
 > Added it to **/etc/hosts**
 
@@ -169,6 +169,8 @@ echo '10.10.11.11 crm.board.htb' | sudo tee -a /etc/hosts
 ![dolibar_websites](./screenshots/dolibarr_website.png)
 
 > Next, I create a template with an arbitrary name and in the page source code editing settings I enter the php payload:
+
+![dolibarr_page](./screenshots/dolibarr_page.png)
 
 ![dolibarr_edit](./screenshots/dolibarr_edit.png)
 
@@ -561,7 +563,7 @@ ae98930d57f5c9aaa794ff930dd9c5fc
 > The `BoardLight` machine was compromised during the exploitation of various vulnerabilities. A vulnerable version of the
 > CRM system `Dolibarr 17.0.0` was exploited via `CVE-2023-30253`, which gave initial access to the server under the user `www-data`.
 > Then, configuration files (`conf.php`) were found containing credentials that led to the compromise of the user
-> `lasrissa`. During the privilege escalation, the vulnerability `CVE-2022-37706` was used, present in the SUID binary `enlightenment_sys`
+> `larissa`. During the privilege escalation, the vulnerability `CVE-2022-37706` was used, present in the SUID binary `enlightenment_sys`
 > version `0.23.1`, which is part of the `Enlightenment` environment. This vulnerability allows executing arbitrary commands with `root` privileges. > This is achieved by passing unfiltered user input to the `system()` function call, resulting in `command injection`.
 > By exploiting this vulnerability, the system was `compromised`.
 
