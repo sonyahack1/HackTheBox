@@ -46,7 +46,7 @@ echo '10.10.11.221 twomillion.htb' | sudo tee -a /etc/hosts
 
 ---
 
-## Reconnaissance
+## <span aria-hidden="true">🕵️ </span>  Reconnaissance
 
 > Scanning the target for open ports and services
 
