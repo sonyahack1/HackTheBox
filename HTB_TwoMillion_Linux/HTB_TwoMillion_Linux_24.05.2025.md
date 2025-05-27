@@ -16,7 +16,7 @@
 ## Table of Contents
 
 - [Summary](#summary)
-- [Reconnaissance](#reconnaissance)
+- [Reconnaissance](#Reconnaissance)
 - [Entry Point](#entry-point)
 - [Initial Access](#initial-access)
 - [Horizontal Privilege Escalation](#horizontal-privilege-escalation)
@@ -46,7 +46,7 @@ echo '10.10.11.221 twomillion.htb' | sudo tee -a /etc/hosts
 
 ---
 
-## Reconnaissance 🕵️
+## Reconnaissance
 
 > Scanning the target for open ports and services
 
