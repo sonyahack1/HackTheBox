@@ -16,7 +16,7 @@
 ## Table of Contents
 
 - [Summary](#summary)
-- [Reconnaissance](#reconnaissance-)
+- [Reconnaissance](#reconnaissance-%EF%B8%8F)
 - [Entry Point](#entry-point)
 - [Initial Access](#initial-access)
 - [Horizontal Privilege Escalation](#horizontal-privilege-escalation)
