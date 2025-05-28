@@ -17,12 +17,12 @@
 
 - [Summary](#summary)
 - [Reconnaissance](#reconnaissance-%EF%B8%8F)
-- [Entry Point](#entry-point)
-- [Initial Access](#initial-access)
-- [Horizontal Privilege Escalation](#horizontal-privilege-escalation)
-- [Vertical Privilege Escalation](#vertical-privilege-escalation)
-- [CVE-2023-0386 - Linux Kernel](#cve-2023-0386-linux-kernel)
-- [Conclusion](#conclusion)
+- [Entry Point](#-entry-point)
+- [Initial Access](#-initial-access)
+- [Horizontal Privilege Escalation](#%EF%B8%8F-horizontal-privilege-escalation)
+- [Vertical Privilege Escalation](#%EF%B8%8F--vertical-privilege-escalation)
+- [CVE-2023-0386 - Linux Kernel](#-cve-2023-0386---linux-kernel)
+- [Conclusion](#-conclusion)
 
 
 ## Summary
@@ -118,7 +118,7 @@ register                [Status: 200, Size: 4527, Words: 1512, Lines: 95, Durati
 
 > Request:
 
-```html
+```http
 
 POST /api/v1/invite/verify HTTP/1.1
 Host: 2million.htb
@@ -135,14 +135,14 @@ Referer: http://2million.htb/invite
 Cookie: PHPSESSID=b6haeitdo3u52aqtrqjsko2hfb
 Priority: u=0
 
-```html
+
 code=123
 
 ```
 
 > Response:
 
-```html
+```http
 
 HTTP/1.1 200 OK
 Server: nginx
@@ -166,7 +166,7 @@ Content-Length: 67
 
 > Request:
 
-```html
+```http
 
 GET /invite HTTP/1.1
 Host: 2million.htb
@@ -304,9 +304,11 @@ sonyahack1 kali ~                                                               
 > Account main page:
 ![home_page](./screenshots/home_page.png)
 
-> 
+> By analogy, I examine the javascript file that is loaded and executed for the current page.
+> I intercept the request in BurpSuite:
 
-```html
+> Request:
+```http
 
 GET /home HTTP/1.1
 Host: 2million.htb
@@ -323,6 +325,7 @@ Priority: u=0, i
 ```
 > I draw your attention to the file `htb-backend.min.js`:
 
+> Response:
 ![js_backend](./screenshots/js_backend.png)
 
 ![js_backend_encoded](./screenshots/js_backend_encoded.png)
@@ -343,24 +346,26 @@ js-beautify js_backend.txt > js_backend_decode.txt
 
 > Request:
 
-```html
+```http
 
 GET /api HTTP/1.1
 
 ```
 > Response:
+
 ![respons_api](./screenshots/response_api.png)
 
 > The server returns a list of available versions of this `api` and in this case I see that there is `version 1`. I request a list of `api endpoints` for this version:
 
 > Request:
 
-```html
+```http
 
 GET /api/v1 HTTP/1.1
 
 ```
 > Response:
+
 ![response_api_2](./screenshots/response_api_2.png)
 
 > Great. I got a list of interesting api addresses. It's my **Entry Point.**
@@ -620,6 +625,7 @@ Content-Length: 32
 > **Note:** I also draw attention to the importance of a correct request. The `Content-Type` header and the `username` parameter in the request body are required.
 
 > Response:
+
 ![vpn_generated_file](./screenshots/vpn_generated_file.png)
 
 > Great. I got the configuration output for the `ovpn` file.
@@ -775,7 +781,7 @@ admin@2million:~$ uname -r
 > user to escalate their privileges to **root** level. It affects Linux kernels prior to `6.2` and was patched in January 2023,
 > and publicly disclosed in March 2023.
 
-### CVE-2023-0386 - Linux Kernel
+### 🔑 CVE-2023-0386 - Linux Kernel
 
 > exploit for this CVE: [CVE-2023-0386](https://github.com/puckiestyle/CVE-2023-0386)
 
@@ -869,7 +875,7 @@ root@2million:/root#
 
 - `./fuse ./ovlcap/lower ./gc` — mounts FUSE FS, where ./gc is the prepared root-shell.
 - FUSE creates a virtual file /file with owner root and permissions 04777.
-- exp.c` mounts OverlayFS:
+- `exp.c` mounts OverlayFS:
 	- lowerdir = ./ovlcap/lower (with FUSE root file)
 	- upperdir = ./ovlcap/upper
 	- workdir = ./ovlcap/work
