@@ -158,6 +158,7 @@ Content-Length: 67
 
 ```
 > invalid code
+
 ![invalid_code](./screenshots/invalid_code.png)
 
 > There is internal logic that checks the entered code, somehow verifies it. I find out which `javascript` files are loaded for execution.
@@ -183,6 +184,7 @@ Priority: u=0, i
 ```
 
 > Response:
+
 ![inviteapi_js](./screenshots/inviteapi_js.png)
 
 > I see `inviteapi.min.js` file, which is related to processing the `Invite Code` form.
@@ -190,6 +192,7 @@ Priority: u=0, i
 > I open the file in the browser and see obfuscated `javascript` code:
 
 > obfuscated code
+
 ![encoded_js_script](./screenshots/encoded_js_script.png)
 
 > I translate this code into a readable form over `js-beautify` tool:
@@ -255,6 +258,7 @@ POST /api/v1/invite/how/to/generate HTTP/1.1
 
 ```
 > Response:
+
 ![encrypted_data](./screenshots/encrypted_data.png)
 
 > string with data `Va beqre gb trarengr gur vaivgr pbqr, znxr n CBFG erdhrfg gb \/ncv\/i1\/vaivgr\/trarengr` is encrypted with `ROT13`
@@ -277,6 +281,7 @@ POST /api/v1/invite/generate HTTP/1.1
 ```
 
 > Response:
+
 ![encoded](./screenshots/encoded.png)
 
 > The code `VkRQQlctQlpZWVItVFdSN04tOEVZREk=` is encrypted in `base64`.
@@ -302,12 +307,14 @@ sonyahack1 kali ~                                                               
 ![registration](./screenshots/registration.png)
 
 > Account main page:
+
 ![home_page](./screenshots/home_page.png)
 
 > By analogy, I examine the javascript file that is loaded and executed for the current page.
 > I intercept the request in BurpSuite:
 
 > Request:
+
 ```http
 
 GET /home HTTP/1.1
@@ -326,6 +333,7 @@ Priority: u=0, i
 > I draw your attention to the file `htb-backend.min.js`:
 
 > Response:
+
 ![js_backend](./screenshots/js_backend.png)
 
 ![js_backend_encoded](./screenshots/js_backend_encoded.png)
@@ -775,6 +783,7 @@ admin@2million:~$ uname -r
 > In the search for vulnerabilities on the network for the current version of the kernel I found `CVE-2023-0386`:
 
 > cve-2023-0386 - PoC
+
 ![cve-2023-0386](./screenshots/cve-2023-0386.png)
 
 > **Note:** `CVE-2023-0386` is a critical vulnerability in the **OverlayFS** subsystem of the Linux kernel that could allow a local unprivileged
