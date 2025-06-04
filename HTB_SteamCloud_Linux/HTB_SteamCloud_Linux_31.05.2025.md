@@ -491,11 +491,11 @@ root@steamcloud:~/root#
 ---
 ## 🧠 Conclusion
 
-> В процессе прохождения данной машины была выявлена уязвимость в Kubelet API позволяющая без аутентификации получать информацию о запущенных подах на узле Kubernetes.
-> В ходе эксплуатации данной уязвимости был получен первоначальный доступ в пользовательский контейнер `nginx` развернутый в namespace `default`.
-> После проведения Kubernetes Enumeration были обнаружены токен и сертификат сервис аккаунта пода от имени которого запущен под `nginx`. Также было выявлено
-> о наличия прав на создание нового пода в пределах данного namespace (`default`). Используя найденные токен и сертификат был создан поддельный под с докер контейнером которому
-> примонтирована корневая файловая система хоста (`/`). Это позволило получить полный доступ к хостовой части системы `Kubernetes` узла с правами `root`.
+> During the testing of this machine, a vulnerability was found in the Kubelet API that allows obtaining information about running pods on a Kubernetes node without authentication.
+> During the exploitation of this vulnerability, initial access was obtained to a user nginx container deployed in the default namespace. After conducting Kubernetes Enumeration,
+> a token and certificate of the pod service account on behalf of which nginx was launched were found. It was also found that there were rights to create a new pod within this
+> namespace (default). Using the found token and certificate, a fake pod was created with a docker container to which the host root file system (/) was mounted. This allowed full
+> access to the host part of the Kubernetes node system with root rights.
 
 ---
 
