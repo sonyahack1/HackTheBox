@@ -21,7 +21,7 @@
 - [Reconnaissance](#%EF%B8%8F-reconnaissance)
 - [Entry Point](#-entry-point)
 - [Initial Access](#-initial-access)
-- [Vertical Privilege Escalation](#-vertical-privilege-escalation)
+- [Vertical Privilege Escalation](#%EF%B8%8F-vertical-privilege-escalation)
 - [Conclusion](#-conclusion)
 
 ---
@@ -47,7 +47,7 @@ echo "10.10.11.133 steamcloud.htb" | sudo tee -a /etc/hosts
 ```
 
 ---
-## 🕵️ reconnaissance
+## 🕵️ Reconnaissance
 
 > I start scanning for open ports and services:
 
