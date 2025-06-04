@@ -19,3 +19,14 @@ a malicious pod and then use Kubectl to run commands within the pod to read the 
 
 ---
 
+> Skill required:
+
+- Based Web Enumeration
+- Kubernetes Enumeration
+- Based Linux CLI
+- Understanding the basic principles of `containerization` and `virtualization`
+
+> Skill Learned:
+
+- Advanced web knowledge (websocat,curl etc.)
+- Exploitation of `Kubelet API`
