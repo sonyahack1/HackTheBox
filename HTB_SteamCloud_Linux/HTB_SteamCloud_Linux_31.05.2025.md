@@ -18,10 +18,10 @@
 ## Table of Contents
 
 - [Summary](#summary)
-- [reconnaissance](#%EF%B8%8F-reconnaissance)
-- [ntry Point](#-entry-point)
+- [Reconnaissance](#%EF%B8%8F-reconnaissance)
+- [Entry Point](#-entry-point)
 - [Initial Access](#-initial-access)
-- [ertical Privilege Escalation](#️-vertical-privilege-escalation)
+- [Vertical Privilege Escalation](#-vertical-privilege-escalation)
 - [Conclusion](#-conclusion)
 
 ---
