@@ -19,12 +19,3 @@ a malicious pod and then use Kubectl to run commands within the pod to read the 
 
 ---
 
-> Skill required:
-
-- Api enumeration
-- Linux command line
-
-> Skill Learned:
-
-- Command Injection into Api Endpoints
-- Exploitation of a vulnerable Linux Kernel
