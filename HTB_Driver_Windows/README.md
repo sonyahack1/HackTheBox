@@ -23,8 +23,10 @@ Using the exploit we can get a session as `NT AUTHORITY\SYSTEM`.
 
 > Skill required:
 
-- Based Web Enumeration
-- Based Windows CLI
+- Windows Enumeration
+- Windows CLI
 
 > Skill Learned:
 
+- CVE-2019-19363 exploitation
+- improved knowledge of working with `metasploit`
