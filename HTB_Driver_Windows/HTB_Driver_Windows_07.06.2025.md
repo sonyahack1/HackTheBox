@@ -17,11 +17,11 @@
 ## Table of Contents
 
 - [Summary](#summary)
-- [Reconnaissance](#%EF%B8%8F-reconnaissance)
+- [Reconnaissance](#%EF%B8%8F--reconnaissance)
 - [Entry Point](#-entry-point)
 - [Initial Access](#-initial-access)
 - [Vertical Privilege Escalation](#%EF%B8%8F-vertical-privilege-escalation)
-- [CVE Exploitation](#)
+- [CVE Exploitation](#-cve-exploitation)
 - [Conclusion](#-conclusion)
 
 ---
@@ -118,7 +118,7 @@ sonyahack1 kali ~
 
 > I open the page on port 80:
 
-![login](./screenshots/lo0gin.png)
+![login](./screenshots/login.png)
 
 > I see the authentication form in the web interface. The first thing that came to my mind is the standard set of logins and passwords by default:
 
