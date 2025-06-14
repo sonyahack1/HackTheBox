@@ -27,6 +27,9 @@ Each writeup is organized in its own directory
 
 ---
 
-## Feedback
+## Feedback & Contributions
 
-Feel free to open an issue or pull request if you want to contribute, discuss, or improve something.
+Spotted a mistake? Have suggestions or want to discuss something?
+
+I'm always open to feedback and collaboration!
+Reach out via [Twitter](https://x.com/sonyaflower995).
