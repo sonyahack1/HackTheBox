@@ -640,7 +640,7 @@ C:\Users\Administrator\Desktop>
 ---
 ## 🧠 Conclusion
 
-> During the pass of this machine, the web interface for managing printers in the system was accessed using the default credentials: `admin:admin`. On the `Firmware Updates` page, the ability to
+> During the walkthrough of this machine, the web interface for managing printers in the system was accessed using the default credentials: `admin:admin`. On the `Firmware Updates` page, the ability to
 > download `.scf` files was detected, which made it possible to obtain the `NTLM hash` of the `tony` user password and then initial access to the system via the `winrm` protocol.
 > During the **Windows Enumeration**, a command to add a `Ricoh` printer with a vulnerable version of the `Ricoh` driver (**v4.23**) was found in the `PowerShell` command history file. This version
 > of the driver is associated with the vulnerability `CVE-2019-19363`, the exploitation of which allowed full access to the system with `SYSTEM` privileges.
