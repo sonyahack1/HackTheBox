@@ -169,7 +169,7 @@ sonyahack1 kali ~
 
 ![scf_file_example](./screenshots/scf_file_example.png)
 
-> An example is given in the source: ![scf_example](https://codeby.net/threads/smb-share-scf-file-attacks.72670/)
+> An example is given in the source: [scf_example](https://codeby.net/threads/smb-share-scf-file-attacks.72670/)
 
 > I remove unnecessary `[Taskbar]` lines and leave only `[Shell]` - this is the main section of our command shell.
 > I specify the address of my system as the value of the `IconFile` parameter. I also specify the name of any directory for the request in the address (for example, `share`)
