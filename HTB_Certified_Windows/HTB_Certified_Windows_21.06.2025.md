@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="./screenshots/certified_logo.png" alt="certified_logo"/>
+  <img src="./screenshots/certified_logo_2.png" alt="certified_logo"/>
 </p>
 
 ---
