@@ -101,10 +101,10 @@ PORT      STATE SERVICE       REASON          VERSION
 
 > Pay attention to the following ports:
 
-- `389` и `636` - порты на которых работают службы `ldap/ldaps` указывающие, что целью является контроллер домена именуемый как `DC01.certified.htb`;
-- `88` порт - служба `kerberos`;
-- `445` порт - служба `SMB` и `139` порт - NetBIOS.
-- `5985` - `Winrm` служба удаленного управления
+- `389` and `636` are the ports on which the `ldap/ldaps` services are running indicating that the target is a domain controller named `DC01.certified.htb`;
+- `88` port is the `kerberos` service;
+- `445` port is the `SMB` service and `139` port is the NetBIOS service.
+- `5985` is the `Winrm` remote management service
 
 > I also write the domain controller `DC01.certified.htb` in `/etc/hosts`
 
