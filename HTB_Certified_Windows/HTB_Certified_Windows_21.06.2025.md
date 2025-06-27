@@ -19,9 +19,9 @@
 - [Summary](#summary)
 - [Reconnaissance](#%EF%B8%8F--reconnaissance)
 - [Horizontal Privilege Escalation](#%EF%B8%8F-horizontal-privilege-escalation)
-- [Shadow Credentials](#shadow-credentials)
+- [Shadow Credentials](#-shadow-credentials)
 - [Vertical Privilege Escalation](#%EF%B8%8F-vertical-privilege-escalation)
-- [ESC-9](#ESC-9)
+- [ESC-9](#-esc-9)
 - [Conclusion](#-conclusion)
 
 ---
@@ -281,7 +281,7 @@ sudo impacket-owneredit -action write -new-owner 'judith.mader' -target-dn 'CN=M
 ```
 > Re-collecting information via `SharpHound` and displaying changes in `BloodHound`:
 
-![bloodhound_judith_owner](./screenshost/bloodhound_judith_owner.png)
+![bloodhound_judith_owner](./screenshots/bloodhound_judith_owner.png)
 
 > User `judith.mader` is now the owner of the `Management` group.
 
@@ -430,7 +430,7 @@ a091c1832bcdd4677c28b5a6a1295584
 ```
 > We have login and `NT-hash` of user `management_svc`. In `BloodHound` we can see that user is a member of `Remote Management Users` group:
 
-![bloodhound_management_remote](./screenshots/bloodhound_management_remote.png)
+![bloodhound_management_svc_remote](./screenshots/bloodhound_management_svc_remote.png)
 
 > This means that I can authenticate to the system via `winrm` using the received credentials:
 
@@ -668,4 +668,6 @@ Mode                LastWriteTime         Length Name
 > to the `ESC-9` attack was discovered which allowed to change the `UPN` of the `ca_operator` account and obtain the ability to request a certificate on behalf of the `Administrator`.
 > The `NTLM hash` of the `Administrator` user was extracted from the received certificate which resulted in a complete compromise of the system.
 
-![solved_machine](./screenshots/solved_machine.png)
+<p align="center">
+  <img src="./screenshots/solved_machine.png" alt="solved_mschine"/>
+</p>
