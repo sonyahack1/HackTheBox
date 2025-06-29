@@ -1,7 +1,9 @@
 <div align="center">
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&pause=1000&color=1EF718&center=true&vCenter=true&width=435&lines=%F0%9D%97%9B%F0%9D%97%AE%F0%9D%97%B0%F0%9D%97%B8+%F0%9D%97%A7%F0%9D%97%B5%F0%9D%97%B2+%F0%9D%97%95%F0%9D%97%BC%F0%9D%98%85+%F0%9D%97%AA%F0%9D%97%BF%F0%9D%97%B6%F0%9D%98%81%F0%9D%97%B2%F0%9D%98%82%F0%9D%97%BD%F0%9D%98%80" alt="Typing SVG" /></a>
 </div>
+
 ---
+
 <img src="./screenshots/hackthebox_logo.png" alt="Logo"/>
 
 ---
