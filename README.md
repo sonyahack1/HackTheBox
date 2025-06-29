@@ -4,7 +4,9 @@
 
 ---
 
-<img src="./screenshots/hackthebox_logo.png" alt="Logo"/>
+<p align="center">
+   <img src="./screenshots/hackthebox_logo.png" alt="Logo"/>
+</p>
 
 ---
 Welcome to my personal collection of writeups for machines and challenges on [Hack The Box](https://hackthebox.com/).
