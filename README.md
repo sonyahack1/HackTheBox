@@ -28,10 +28,10 @@ This repository should be used `only for ethical purposes`: to protect your own 
 
 ## Feedback & Contributions
 
-<div aign="center">
+<div align="center">
   <p>Spotted a mistake? Have suggestions or want to discuss something?</p>
 </div>
-<div>
+<div align="center">
   <p>I'm always open to feedback and collaboration!</p>
 </div>
 
