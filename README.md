@@ -25,8 +25,7 @@ This repository should be used `only for ethical purposes`: to protect your own 
 `The author is not responsible for direct or indirect damage resulting from the illegal use of the presented materials`
 
 ---
-
-## Feedback & Contributions
+<h1 align="center"> 💬 Feedback & Contributions </h1>
 
 <div align="center">
   <p>Spotted a mistake? Have suggestions or want to discuss something?</p>
