@@ -17,7 +17,7 @@ Periodically I will return to the laboratories and machines I have completed and
 Each writeup is organized in its own directory
 
 ---
-## ⚠️ Disclaimer
+<h1 align="center">⚠️ Disclaimer ⚠️</h1>
 
 > [!IMPORTANT]
 > These writeups are created `for educational purposes only`. Demonstration of tools and various pentesting techniques does not encourage their use outside the legal field.
