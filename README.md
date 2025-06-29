@@ -20,9 +20,8 @@ Each writeup is organized in its own directory
 ---
 > [!IMPORTANT]
 > These writeups are created for educational purposes only. Demonstration of tools and various pentesting techniques does not encourage their use outside the legal field.
-> This repository should be used only for ethical purposes: to protect your own systems, improve cybersecurity skills, or within the framework of official agreements.
-
-> The author is not responsible for direct or indirect damage resulting from the illegal use of the presented materials
+This repository should be used only for ethical purposes: to protect your own systems, improve cybersecurity skills, or within the framework of official agreements.
+The author is not responsible for direct or indirect damage resulting from the illegal use of the presented materials
 
 ---
 
