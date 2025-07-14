@@ -18,8 +18,8 @@
 
 - [Summary](#summary)
 - [Reconnaissance](#%EF%B8%8F--reconnaissance)
-- [Entry Point](#entry-point)
-- [Initial Access](#initial-access)
+- [Entry Point](#-entry-point)
+- [Initial Access](#-initial-access)
 - [Vertical Privilege Escalation](#%EF%B8%8F-vertical-privilege-escalation)
 - [Capabilities exploitation](#-capabilities-exploitation)
 - [Conclusion](#-conclusion)
