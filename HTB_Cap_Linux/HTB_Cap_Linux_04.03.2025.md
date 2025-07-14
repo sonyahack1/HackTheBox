@@ -97,7 +97,11 @@ sudo nmap -sVC -p- -vv -T5 cap.htb -oN tcp_scan_cap
 > The address of the current panel page from which I downloaded the `.pcap` file has the following url - `http://cap.htb/data/4`
 > The `4` parameter clearly points to some scanning ID for the current user `nathan`.
 
+![idor_url](./screenshots/idor_url.png)
+
 > I try to access other scanning results by replacing the ID, for example, with `0`:
+
+![idor_url_0](./screenshots/idor_url_0.png)
 
 ![pcap_0](./screenshots/pcap_0.png)
 
