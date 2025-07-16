@@ -18,7 +18,7 @@
 
 - [Summary](#summary)
 - [Reconnaissance](#%EF%B8%8F--reconnaissance)
-- [Entry Point](#-entry-point)
+- [Entry Point](#-entry-point--initial-access)
 - [Conclusion](#-conclusion)
 
 ---
