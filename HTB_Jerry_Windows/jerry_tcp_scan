@@ -1,0 +1,16 @@
+# Nmap 7.95 scan initiated Tue Jul 15 20:09:33 2025 as: /usr/lib/nmap/nmap -sVC -p- -vv -T5 -oN jerry_tcp_scan jerry.htb
+Nmap scan report for jerry.htb (10.10.10.95)
+Host is up, received echo-reply ttl 127 (0.042s latency).
+Scanned at 2025-07-15 20:09:34 EDT for 68s
+Not shown: 65534 filtered tcp ports (no-response)
+PORT     STATE SERVICE REASON          VERSION
+8080/tcp open  http    syn-ack ttl 127 Apache Tomcat/Coyote JSP engine 1.1
+|_http-title: Apache Tomcat/7.0.88
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache-Coyote/1.1
+|_http-favicon: Apache Tomcat
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jul 15 20:10:42 2025 -- 1 IP address (1 host up) scanned in 68.86 seconds
