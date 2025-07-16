@@ -99,8 +99,10 @@ sudo nmap -sVC -p- -vv -T5 jerry.htb -oN jerry_tcp_scan
 ## 🚪 Entry Point / initial access
 
 ---
-`Note:` `.war` is a special file format (extension) designed for deploying **Java** applications on `Apache Tomcat` servers. This format is correct for `Tomcat` since it contains all the
+
+**Note:** `.war` is a special file format (extension) designed for deploying **Java** applications on `Apache Tomcat` servers. This format is correct for `Tomcat` since it contains all the
 necessary components for deploying and running the application itself - `JSP files`, `servlets`, `HTML pages`, `static resources` and `configuration files`.
+
 ---
 
 > If there is no filtering or validation of uploaded files on the server side, then having access to the web applications administration panel I can implement an attack of the `Insecure File Upload` type
@@ -133,9 +135,11 @@ Saved as: reverse.war
 ![tomcat_admin](./screenshots/tomcat_admin.png)
 
 ---
-`Note:` `Insecure File Upload` is a web vulnerability that exploits the ability of web applications to expand using user information using functions
+
+**Note:** `Insecure File Upload` is a web vulnerability that exploits the ability of web applications to expand using user information using functions
 to upload something to the server - `files`, `pictures`, `documents`, etc. If the data uploaded by the user is not filtered and checked properly, this can
 lead to the execution of arbitrary malicious code on the server side.
+
 ---
 
 > Flags are in the directory `C:\Users\Administrator\Desktop\flags`:
@@ -165,10 +169,8 @@ C:\apache-tomcat-7.0.88>
 
 > To eliminate the vulnerabilities, it is necessary to:
 
-- 1) Implement full control over access rights. Do not use default credentials to avoid unauthorized access to the administration functionality. Users
-- should not have excessive privileges.
-
-- 2) Be sure to implement `verification of uploaded files`. It is necessary to strictly check and limit the upload of `.war` files.
+- Implement full control over access rights. Do not use default credentials to avoid unauthorized access to the administration functionality. Users should not have excessive privileges.
+- Be sure to implement `verification of uploaded files`. It is necessary to strictly check and limit the upload of `.war` files.
 
 <p align="center">
   <img src="./screenshots/solved_machine.png" alt="solved_mschine"/>
