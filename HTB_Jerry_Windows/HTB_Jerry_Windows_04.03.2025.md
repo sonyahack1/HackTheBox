@@ -99,7 +99,7 @@ sudo nmap -sVC -p- -vv -T5 jerry.htb -oN jerry_tcp_scan
 ## 🚪 Entry Point / initial access
 
 ---
-**Note:** `.war` is a special file format (extension) designed for deploying **Java** applications on `Apache Tomcat` servers. This format is correct for `Tomcat` since it contains all the
+`Note:` `.war` is a special file format (extension) designed for deploying **Java** applications on `Apache Tomcat` servers. This format is correct for `Tomcat` since it contains all the
 necessary components for deploying and running the application itself - `JSP files`, `servlets`, `HTML pages`, `static resources` and `configuration files`.
 ---
 
@@ -133,7 +133,7 @@ Saved as: reverse.war
 ![tomcat_admin](./screenshots/tomcat_admin.png)
 
 ---
-**Note:** `Insecure File Upload` is a web vulnerability that exploits the ability of web applications to expand using user information using functions
+`Note:` `Insecure File Upload` is a web vulnerability that exploits the ability of web applications to expand using user information using functions
 to upload something to the server - `files`, `pictures`, `documents`, etc. If the data uploaded by the user is not filtered and checked properly, this can
 lead to the execution of arbitrary malicious code on the server side.
 ---
