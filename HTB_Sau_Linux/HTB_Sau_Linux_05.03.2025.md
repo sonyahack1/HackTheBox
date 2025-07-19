@@ -18,9 +18,10 @@
 
 - [Summary](#summary)
 - [Reconnaissance](#%EF%B8%8F--reconnaissance)
-- [Entry Point](#-entry-point--initial-access)
+- [Entry Point](#-entry-point)
+- [SSRF](#-ssrf)
 - [Command Injection](#-command-injection)
-- [vertical privilege escalation](#-vertical-privilege-escalation)
+- [vertical privilege escalation](#%EF%B8%8F-vertical-privilege-escalation)
 - [Conclusion](#-conclusion)
 
 ---
@@ -272,7 +273,8 @@ puma@sau:~$
 > user flag - `327b415ec573c1bd0ba02afd53ec33b0`
 
 ---
-##🧍⬆️🧑‍💼 Vertical Privilege Escalation
+
+## 🧍⬆️🧑‍💼 Vertical Privilege Escalation
 
 ```bash
 
@@ -379,10 +381,10 @@ root@sau:~#
 ---
 ## 🧠 Conclusion
 
-> Во время прохождения данной машины была обнаружена SSRF уязвимость сервиса request basket v1.2.1 которая позволила получить доступ к внутренней IDS системе
-> Maltrail работающей на localhost на порту 80. Версия данной системы v0.53 - является уязвимой к OS Command Injection в параметре username. Эксплуатация данной
-> уязвимости позволила получить доступ в систему под пользователем puma для которого были настроены небезопасные права в /etc/sudoers что привело к полной компрометации
-> системы.
+> During the walkthrough of this machine an `SSRF vulnerability` was detected in the `request basket v1.2.1` service, which allowed access to the internal IDS
+> system `Maltrail` running on `localhost` on port 80. The version of this system v0.53 is vulnerable to `OS Command Injection` in the **username** parameter.
+> Exploitation of this vulnerability allowed access to the system under the `puma` user, for whom insecure rights were configured in /etc/sudoers, which led
+> to a complete compromise of the system.
 
 <p align="center">
   <img src="./screenshots/solved_machine.png" alt="solved_mschine"/>
