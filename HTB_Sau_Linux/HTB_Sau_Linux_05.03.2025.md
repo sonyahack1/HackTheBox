@@ -80,7 +80,9 @@ sudo nmap -sVC -p- -vv -T5 sau.htb -oN sau_tcp_scan
 > `80` and `8338` ports in `filtered` status. Two open ports are available for interaction - `22 (ssh)` and `55555 (web)`.
 > Go to the browser on `55555` port:
 
-![request_basket_web](./screenshots/request_basket_web.png)
+<p align="center">
+  <img src="./screenshots/request_basket_web.png" alt="request_basket_web"/>
+</p>
 
 > On the page in the browser I see the web application `request basket` `v1.2.1` designed for testing and debugging HTTP requests. The application
 > allows you to create and send `http` requests with different methods and log them for further analysis.
