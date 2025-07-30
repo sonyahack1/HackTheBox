@@ -465,10 +465,14 @@ cicada\emily.oscars
 *Evil-WinRM* PS C:\Users\emily.oscars.CICADA\Desktop>
 
 ```
-<p align="center">
-  <strong>🟢 User flag</strong><br/>
-  <code>4882f52e3f868e436d2a43f0a2fcbdc7</code>
-</p>
+<table>
+  <tr>
+    <td align="center">
+      <b>🟢 User flag</b><br/>
+      <code>4882f52e3f868e436d2a43f0a2fcbdc7</code>
+    </td>
+  </tr>
+</table>
 
 ---
 ## 🧍⬆️🧑‍💼 Vertical Privilege Escalation
@@ -592,7 +596,10 @@ cicada\administrator
 *Evil-WinRM* PS C:\Users\Administrator\Desktop>
 
 ```
-> root flag - `8fd7a8ffe43ffd35cc2dd9134cb7b484`
+<p align="center">
+  <strong>🟢 Root flag</strong><br/>
+  <code>8fd7a8ffe43ffd35cc2dd9134cb7b484</code>
+</p>
 
 ---
 
