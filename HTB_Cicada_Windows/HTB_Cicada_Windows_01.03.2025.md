@@ -682,6 +682,6 @@ cicada\administrator
 > `Administrator` user, which led to a complete compromise of the system.
 
 <p align="center">
- <img src="./screenshots/solved_machine.png" alt="solved_machine" />
+ <img src="./screenshots/solved_machine.png" alt="solved" />
 </p>
 
