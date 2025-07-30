@@ -207,7 +207,7 @@ smb: \> exit
 
 ---
 
-##🚪 Entry Point
+## 🚪 Entry Point
 
 > Let's list users in the system via `nxc` with the `--rid-brute` flag and save them in `users.txt` for further analysis.
 
