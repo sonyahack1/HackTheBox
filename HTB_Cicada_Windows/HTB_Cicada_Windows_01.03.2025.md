@@ -14,7 +14,7 @@
   </tr>
   <tr>
     <td><b>🧑‍💻 Author</b></td>
-    <td><br>sonyahack1</br></td>
+    <td><code><br>sonyahack1</br></code></td>
   </tr>
   <tr>
     <td><b>📅 Date</b></td>
