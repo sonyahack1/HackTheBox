@@ -465,6 +465,8 @@ cicada\emily.oscars
 *Evil-WinRM* PS C:\Users\emily.oscars.CICADA\Desktop>
 
 ```
+<div align="center">
+
 <table>
   <tr>
     <td align="center">
@@ -473,6 +475,8 @@ cicada\emily.oscars
     </td>
   </tr>
 </table>
+
+</div>
 
 ---
 ## 🧍⬆️🧑‍💼 Vertical Privilege Escalation
