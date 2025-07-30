@@ -479,7 +479,7 @@ cicada\emily.oscars
 </div>
 
 ---
-## 🧍⬆️🧑‍💼 Vertical Privilege Escalation
+## 🔑⬆️  Vertical Privilege Escalation
 
 > Previously `BloodHound` showed that the user is a member of the `Backup Operators` group, which is a direct vector for escalating privileges.
 > To confirm, I'll list the `emily.oscars` groups:
@@ -600,10 +600,19 @@ cicada\administrator
 *Evil-WinRM* PS C:\Users\Administrator\Desktop>
 
 ```
-<p align="center">
-  <strong>🟢 Root flag</strong><br/>
-  <code>8fd7a8ffe43ffd35cc2dd9134cb7b484</code>
-</p>
+<div align="center">
+
+<table>
+  <tr>
+    <td align="center">
+      <b>🟢 Root flag</b><br/>
+      <code>8fd7a8ffe43ffd35cc2dd9134cb7b484</code>
+    </td>
+  </tr>
+</table>
+
+</div>
+
 
 ---
 
