@@ -7,13 +7,32 @@
 
 <div align="center">
 
-| 🎯 **Target** | 🧑‍💻 **Author** | 📅 **Date** |
-|--------------|----------------|------------|
-| HackTheBox - Cicada Windows | `sonyahack1` | 01.03.2025 |
-
-| 📊 **Difficulty** | 📁 **Category** | 💻 **Platform** |
-|------------------|-----------------|-----------------|
-| Easy | Privilege Escalation (`SeBackupPrivilege / SeRestorePrivilege`) | Windows |
+<table>
+  <tr>
+    <td><b>🎯 Target</b></td>
+    <td>HackTheBox - Cicada Windows</td>
+  </tr>
+  <tr>
+    <td><b>🧑‍💻 Author</b></td>
+    <td><code>sonyahack1</code></td>
+  </tr>
+  <tr>
+    <td><b>📅 Date</b></td>
+    <td>01.03.2025</td>
+  </tr>
+  <tr>
+    <td><b>📊 Difficulty</b></td>
+    <td>Easy</td>
+  </tr>
+  <tr>
+    <td><b>📁 Category</b></td>
+    <td>Privilege Escalation (<code>SeBackupPrivilege / SeRestorePrivilege</code>)</td>
+  </tr>
+  <tr>
+    <td><b>💻 Platform</b></td>
+    <td>Windows</td>
+  </tr>
+</table>
 
 </div>
 
