@@ -284,7 +284,7 @@ david.orelious
 emily.oscars
 
 ```
-> We use the found password and the list of all users in the system and launch brute force authorization via `smb`:
+> We use the found password and the list of all users in the system and start brute force authorization via `smb`:
 
 ```bash
 
