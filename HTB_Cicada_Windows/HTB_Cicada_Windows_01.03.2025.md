@@ -21,7 +21,6 @@
 - [Entry Point](#-entry-point)
 - [Initial Access](#-initial-access)
 - [Vertical Privilege Escalation](#%EF%B8%8F-vertical-privilege-escalation)
-- [Capabilities exploitation](#-capabilities-exploitation)
 - [Conclusion](#-conclusion)
 
 ---
@@ -466,7 +465,9 @@ cicada\emily.oscars
 *Evil-WinRM* PS C:\Users\emily.oscars.CICADA\Desktop>
 
 ```
+<p align="center">
 > user flag - `4882f52e3f868e436d2a43f0a2fcbdc7`
+</p>
 
 ---
 ## 🧍⬆️🧑‍💼 Vertical Privilege Escalation
@@ -492,7 +493,8 @@ to perform backups and restores of data.
  <img src="./screenshots/emily_privs.png" alt="emily_privs" />
 </p>
 
-> `SAM` is a file that stores a database of local Windows accounts and their `password hashes`
+> `SAM` is a file that stores a database of local Windows accounts and their `password hashes`.
+
 > `SYSTEM` is also needed because it stores system parameters and **encryption keys** needed to decrypt what is in `SAM`.
 
 ---
