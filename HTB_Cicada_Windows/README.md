@@ -3,29 +3,30 @@
 
 # Machine info:
 
-![logo](./screenshots/cicada_icon.png)
+<div align="center">
 
-## HTB Cicada - Windows
+<img src="./screenshots/cicada_icon.png" alt="logo" width="120"/>
 
-## Difficulty - Easy
+# HTB: Cicada (Windows)
+
+### 📊 Difficulty: **Easy**  
+### 📁 Category: Active Directory / Privilege Escalation  
+
+</div>
 
 ---
 
 <p align="center">
-Cicada is an easy-difficult Windows machine that focuses on beginner Active Directory enumeration and exploitation.
-In this machine, players will enumerate the domain, identify users, navigate shares, uncover plaintext passwords stored
-in files, execute a password spray, and use the unsafe group to achieve full system compromise.
+🔎 <b>Cicada</b> is an <b>easy Windows machine</b> focused on beginner Active Directory enumeration and exploitation. 
+Players will enumerate the domain, identify users, navigate shares, uncover plaintext passwords, perform a password spray, 
+and leverage the <b>Backup Operators</b> group to achieve full system compromise.
 </p>
 
 ---
 
-> [!IMPORTANT]
-> Skill required:
+> 💡 **Skills Required**
+> - Active Directory enumeration (SMB, LDAP)
 
-- Active Directory enumeration (smb , ldap)
-
-> [!TIP]
-> Skill Learned:
-
-- Exploitaion unsafe group - `Backup Operators`
-- Advanced AD enumeration
+> 🛠️ **Skills Learned**
+> - Exploiting unsafe group `Backup Operators`
+> - Advanced AD enumeration
