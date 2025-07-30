@@ -1,8 +1,5 @@
 
 ---
-
-# Machine info:
-
 <div align="center">
 
 <img src="./screenshots/cicada_icon.png" alt="logo" width="120"/>

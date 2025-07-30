@@ -14,7 +14,7 @@
   </tr>
   <tr>
     <td><b>🧑‍💻 Author</b></td>
-    <td><code>sonyahack1</code></td>
+    <td><br>sonyahack1</br></td>
   </tr>
   <tr>
     <td><b>📅 Date</b></td>
@@ -26,7 +26,7 @@
   </tr>
   <tr>
     <td><b>📁 Category</b></td>
-    <td>Privilege Escalation (<code>SeBackupPrivilege / SeRestorePrivilege</code>)</td>
+    <td>Active Directory / Privilege Escalation (<code>SeBackupPrivilege / SeRestorePrivilege</code>)</td>
   </tr>
   <tr>
     <td><b>💻 Platform</b></td>
