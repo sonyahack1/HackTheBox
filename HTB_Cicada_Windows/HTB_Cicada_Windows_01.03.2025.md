@@ -466,7 +466,8 @@ cicada\emily.oscars
 
 ```
 <p align="center">
-> user flag - `4882f52e3f868e436d2a43f0a2fcbdc7`
+  <strong>🟢 User flag</strong><br/>
+  <code>4882f52e3f868e436d2a43f0a2fcbdc7</code>
 </p>
 
 ---
