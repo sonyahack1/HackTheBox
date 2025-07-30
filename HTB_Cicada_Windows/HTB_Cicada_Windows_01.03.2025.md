@@ -7,18 +7,12 @@
 
 <div align="center">
 
-<table>
-<tr><td align="center">
-
-🎯 **Target:** HackTheBox - Cicada Windows
-🧑‍💻 **Author:** `sonyahack1`
-📅 **Date:** 01.03.2025
-📊 **Difficulty:** Easy
-📁 **Category:** Privilege Escalation (`SeBackupPrivilege / SeRestorePrivilege`)
-💻 **Platform:** Windows
-
-</td></tr>
-</table>
+**🎯 Target:** HackTheBox - Cicada Windows  
+**🧑‍💻 Author:** `sonyahack1`  
+**📅 Date:** 01.03.2025  
+**📊 Difficulty:** Easy  
+**📁 Category:** Privilege Escalation (`SeBackupPrivilege / SeRestorePrivilege`)  
+**💻 Platform:** Windows  
 
 </div>
 
