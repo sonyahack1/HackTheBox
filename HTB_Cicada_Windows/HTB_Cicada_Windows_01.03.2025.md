@@ -87,6 +87,15 @@
 ```bash
 
 echo '10.10.11.35 cicada.htb' | sudo tee -a /etc/hosts && ping cicada.htb
+10.10.11.35 cicada.htb
+PING cicada.htb (10.10.11.35) 56(84) bytes of data.
+64 bytes from cicada.htb (10.10.11.35): icmp_seq=1 ttl=127 time=42.2 ms
+64 bytes from cicada.htb (10.10.11.35): icmp_seq=2 ttl=127 time=42.3 ms
+64 bytes from cicada.htb (10.10.11.35): icmp_seq=3 ttl=127 time=42.3 ms
+^C
+--- cicada.htb ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 42.154/42.242/42.308/0.064 ms
 
 ```
 
