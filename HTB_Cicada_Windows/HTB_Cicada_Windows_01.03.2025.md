@@ -5,12 +5,22 @@
 
 ---
 
-- 🎯 **Target:** HackTheBox - Cicada Windows
-- 🧑‍💻 **Author:** `sonyahack1`
-- 📅 **Date:** 01.03.2025
-- 📊 **Difficulty:** Easy
-- 📁 **Category:** Privilege Escalation (`SeBackupPrivilege / SeRestorePrivilege`)
-- 💻 **Platform:** Windows
+<div align="center">
+
+<table>
+<tr><td align="center">
+
+🎯 **Target:** HackTheBox - Cicada Windows
+🧑‍💻 **Author:** `sonyahack1`
+📅 **Date:** 01.03.2025
+📊 **Difficulty:** Easy
+📁 **Category:** Privilege Escalation (`SeBackupPrivilege / SeRestorePrivilege`)
+💻 **Platform:** Windows
+
+</td></tr>
+</table>
+
+</div>
 
 ---
 
@@ -20,7 +30,7 @@
 - [Reconnaissance](#%EF%B8%8F--reconnaissance)
 - [Entry Point](#-entry-point)
 - [Initial Access](#-initial-access)
-- [Vertical Privilege Escalation](#%EF%B8%8F-vertical-privilege-escalation)
+- [Vertical Privilege Escalation](#%EF%B8%8F--vertical-privilege-escalation)
 - [Conclusion](#-conclusion)
 
 ---
