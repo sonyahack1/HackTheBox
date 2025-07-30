@@ -55,35 +55,30 @@
 
 <table>
   <tr>
-    <td><b>Stage</b></td>
-    <td>Info</td>
+    <th>Stage</th>
+    <th>Info</th>
   </tr>
   <tr>
-    <td>User Flag</td>
-    <td>`flag{4882f52e3f868e436d2a43f0a2fcbdc7}`</td>
+    <td><b>User Flag</b></td>
+    <td><code>flag{4882f52e3f868e436d2a43f0a2fcbdc7}</code></td>
   </tr>
   <tr>
-    <td>Root Flag</td>
-    <td>`flag{8fd7a8ffe43ffd35cc2dd9134cb7b484}`</td>
+    <td><b>Root Flag</b></td>
+    <td><code>flag{8fd7a8ffe43ffd35cc2dd9134cb7b484}</code></td>
   </tr>
   <tr>
-    <td>Credentiasl</td>
-    <td>`michael.wrightson:Cicada$M6Corpb*@Lp#nZp!8`</td>
-    <td>`david.orelious:aRt$Lp#7t*VQ!3`</td>
-    <td>`emily.oscars:Q!3@Lp#M6b*7t*Vt`</td>
+    <td><b>Credentials</b></td>
+    <td>
+      <ul style="text-align: left; padding-left: 1em; margin: 0;">
+        <li><code>michael.wrightson:Cicada$M6Corpb*@Lp#nZp!8</code></li>
+        <li><code>david.orelious:aRt$Lp#7t*VQ!3</code></li>
+        <li><code>emily.oscars:Q!3@Lp#M6b*7t*Vt</code></li>
+      </ul>
+    </td>
   </tr>
 </table>
 
 </div>
-
-| Stage         | Info                               	    	|
-|---------------|-----------------------------------------------|
-|   User Flag   | `flag{4882f52e3f868e436d2a43f0a2fcbdc7}`  	|
-|   Root Flag   | `flag{8fd7a8ffe43ffd35cc2dd9134cb7b484}`  	|
-|		|						|
-|  	        | `'michael.wrightson:Cicada$M6Corpb*@Lp#nZp!8` |
-|  Credentiasl	|  `david.orelious:aRt$Lp#7t*VQ!3`		|
-|		|  `emily.oscars:Q!3@Lp#M6b*7t*Vt`		|
 
 ---
 
