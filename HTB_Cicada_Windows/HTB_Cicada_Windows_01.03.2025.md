@@ -51,6 +51,31 @@
 
 ## Summary
 
+<div align="center">
+
+<table>
+  <tr>
+    <td><b>Stage</b></td>
+    <td>Info</td>
+  </tr>
+  <tr>
+    <td>User Flag</td>
+    <td>`flag{4882f52e3f868e436d2a43f0a2fcbdc7}`</td>
+  </tr>
+  <tr>
+    <td>Root Flag</td>
+    <td>`flag{8fd7a8ffe43ffd35cc2dd9134cb7b484}`</td>
+  </tr>
+  <tr>
+    <td>Credentiasl</td>
+    <td>`michael.wrightson:Cicada$M6Corpb*@Lp#nZp!8`</td>
+    <td>`david.orelious:aRt$Lp#7t*VQ!3`</td>
+    <td>`emily.oscars:Q!3@Lp#M6b*7t*Vt`</td>
+  </tr>
+</table>
+
+</div>
+
 | Stage         | Info                               	    	|
 |---------------|-----------------------------------------------|
 |   User Flag   | `flag{4882f52e3f868e436d2a43f0a2fcbdc7}`  	|
