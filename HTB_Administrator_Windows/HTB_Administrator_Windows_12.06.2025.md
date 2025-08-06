@@ -69,7 +69,7 @@
   <tr>
     <td><b>Techniques (MITRE ATT&CK):</b></td>
     <td>
-      <ul style="text-align: left; padding-left: 1em; margin: 0;">
+      <ul style="text-align: left;">
         <li><code>T1595.002 - Active Scanning</code></li>
         <li><code>T1069.002 - Permission Groups Discovery</code></li>
         <li><code>T1098 - Account Manipulation</code></li>
