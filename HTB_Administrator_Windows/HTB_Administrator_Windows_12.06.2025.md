@@ -43,7 +43,7 @@
 
 - [Summary](#summary)
 - [Reconnaissance](#%EF%B8%8F--reconnaissance)
-- [Horizontal Privilege Escalation](#%EF%B8%8F--vertical-privilege-escalation)
+- [Horizontal Privilege Escalation](#%EF%B8%8F--horizontal-privilege-escalation)
 - [Entry Point](#-entry-point)
 - [Vertical Privilege Escalation](#%EF%B8%8F--vertical-privilege-escalation)
 - [Conclusion](#-conclusion)
