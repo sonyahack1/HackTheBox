@@ -444,7 +444,7 @@ PropagationFlags      : None
 
 **Note:** `User-Force-Change-Password` - This allows us to change the user's password without knowing the current one.
 
---
+---
 
 > Resetting password for `Benjamin Brown`:
 
