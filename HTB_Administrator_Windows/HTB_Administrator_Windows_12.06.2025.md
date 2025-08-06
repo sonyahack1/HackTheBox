@@ -149,16 +149,16 @@ Discovered open port 389/tcp on 10.10.11.42
 ```
 > The scan shows a large number of open ports detected. I will highlight the most important ones for research:
 
-- `21 (FTP)` - файловый сервер;
-- `53 (DNS)` - работает собственный DNS;
-- `88 (Kerberos)` - протокол аутентификации в Active Directory;
-- `135 (ms rpc)` - сервис вызова удаленных процедур;
-- `139/445 (SMB)` - служба сеансов NetBIOS, NetLogon / служба доступа к файловым шарам;
-- `389/636 (ldap/ldaps)` - протокол каталогов Active Directory. Позволяет дампить пользователей, группы и тд;
-- `464 (kerberos change/set password)` - служба смены пароля kerberos;
-- `593 (RPC over HTPP (DCOM))` - RCP интерфейсы. Используется в службах DCOM и MS Exchange;
-- `3268, 3269 (global ldap)` - расширенный ldap; для доступа к Global Catalog от клиента к контроллеру;
-- `5985 (winrm)` - для удаленного подключения к системе;
+- `21 (FTP)` - file server;
+- `53 (DNS)` - own DNS works;
+- `88 (Kerberos)` - Active Directory authentication protocol;
+- `135 (ms rpc)` - remote procedure call service;
+- `139/445 (SMB)` - NetBIOS, NetLogon session service / file share access service;
+- `389/636 (ldap/ldaps)` - AD directory protocol. Allows dumping users, groups, etc.;
+- `464 (kerberos change/set password)` - kerberos password change service;
+- `593 (RPC over HTPP (DCOM))` - RCP interfaces. Used in DCOM and MS Exchange services;
+- `3268, 3269 (global ldap)` - extended ldap; for access to Global Catalog from client to controller;
+- `5985 (winrm)` - for remote connection to the system;
 
 > Let's define a domain controller by requesting `roodDSE` via `ldap`:
 
