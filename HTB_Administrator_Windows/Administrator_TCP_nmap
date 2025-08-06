@@ -1,0 +1,62 @@
+# Nmap 7.95 scan initiated Sun Aug  3 18:08:29 2025 as: /usr/lib/nmap/nmap -sVC -p- -vv -T5 -oN Administrator_TCP_nmap administrator.htb
+Warning: Hostname administrator.htb resolves to 2 IPs. Using 10.10.11.42.
+Warning: 10.10.11.42 giving up on port because retransmission cap hit (2).
+Nmap scan report for administrator.htb (10.10.11.42)
+Host is up, received reset ttl 127 (0.042s latency).
+Other addresses for administrator.htb (not scanned): 10.10.11.42
+Scanned at 2025-08-03 18:08:29 EDT for 114s
+Not shown: 65431 closed tcp ports (reset), 78 filtered tcp ports (no-response)
+PORT      STATE SERVICE       REASON          VERSION
+21/tcp    open  ftp           syn-ack ttl 127 Microsoft ftpd
+| ftp-syst: 
+|_  SYST: Windows_NT
+53/tcp    open  domain        syn-ack ttl 127 Simple DNS Plus
+88/tcp    open  kerberos-sec  syn-ack ttl 127 Microsoft Windows Kerberos (server time: 2025-08-04 22:10:44Z)
+135/tcp   open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+139/tcp   open  netbios-ssn   syn-ack ttl 127 Microsoft Windows netbios-ssn
+389/tcp   open  ldap          syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: administrator.htb0., Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds? syn-ack ttl 127
+464/tcp   open  kpasswd5?     syn-ack ttl 127
+593/tcp   open  ncacn_http    syn-ack ttl 127 Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped    syn-ack ttl 127
+3268/tcp  open  ldap          syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: administrator.htb0., Site: Default-First-Site-Name)
+3269/tcp  open  tcpwrapped    syn-ack ttl 127
+5985/tcp  open  http          syn-ack ttl 127 Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+9389/tcp  open  mc-nmf        syn-ack ttl 127 .NET Message Framing
+47001/tcp open  http          syn-ack ttl 127 Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+49664/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+49665/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+49666/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+49667/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+49669/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+50559/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+58820/tcp open  ncacn_http    syn-ack ttl 127 Microsoft Windows RPC over HTTP 1.0
+58825/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+58832/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+58845/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+58877/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled and required
+|_clock-skew: 1d00h01m17s
+| smb2-time: 
+|   date: 2025-08-04T22:11:35
+|_  start_date: N/A
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 35406/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 9695/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 52617/udp): CLEAN (Timeout)
+|   Check 4 (port 23987/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Aug  3 18:10:23 2025 -- 1 IP address (1 host up) scanned in 114.38 seconds
