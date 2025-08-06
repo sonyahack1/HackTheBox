@@ -377,7 +377,9 @@ PropagationFlags      : None
 > We have `Generic All` rights over user `Michael Williams`
 
 ---
+
 **Note:** `Generic All` - This is full control over the object, including password reset.
+
 ---
 
 > Resetting password for `Michael`:
@@ -439,7 +441,9 @@ PropagationFlags      : None
 > Thus we find that the user `Michael` has the privilege `User-Force-Change-Password` over the user `Benjamin`
 
 ---
+
 **Note:** `User-Force-Change-Password` - This allows us to change the user's password without knowing the current one.
+
 --
 
 > Resetting password for `Benjamin Brown`:
@@ -597,7 +601,9 @@ PropagationFlags      : None
 > We have `Generic Write` rights over user `Ethan`.
 
 ---
+
 **Note:** `Generic Write` - allows the user to edit some attributes of objects.
+
 ---
 
 > I use the `T1558.003 - Kerberoasting` technique from the `Credential Access` tactic.
@@ -615,7 +621,9 @@ servicePrincipalName: http/example.com
 
 ```
 ---
+
 **Note:** The entry in `servicePrincipalName` can be anything, even a non-existent site (example.com). For further actions, this is not important.
+
 ---
 
 > Modify the `servicePrincipalName` attribute of user `Ethan Hunt` via `ldapmodify`:
