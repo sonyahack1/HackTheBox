@@ -68,7 +68,7 @@
   </tr>
   <tr>
     <td><b>Techniques (MITRE ATT&CK):</b></td>
-    <td>
+    <td align="left">
       <ul>
         <li><code>T1595.002 - Active Scanning</code></li>
         <li><code>T1069.002 - Permission Groups Discovery</code></li>
