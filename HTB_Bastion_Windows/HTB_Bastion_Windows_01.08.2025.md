@@ -378,7 +378,7 @@ PS C:\Users\L4mpje\Desktop>
 </div>
 
 ---
-## 🔑⬆️  Vertical Privilege Escalatio
+## 🔑⬆️  Vertical Privilege Escalatioon
 
 > The server has the program `mRemoteNG` installed in the directory `C:\Program Files (x86)`:
 
