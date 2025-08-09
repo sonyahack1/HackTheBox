@@ -42,7 +42,7 @@
 - [Summary](#summary)
 - [Reconnaissance](#%EF%B8%8F--reconnaissance)
 - [Initial Access](#-initial-access)
-- [Vertical Privilege Escalation](#%EF%B8%8F--vertical-privilege-escalation)
+- [Vertical Privilege Escalation](#%EF%B8%8F----vertical-privilege-escalation)
 - [Conclusion](#-conclusion)
 
 ---
