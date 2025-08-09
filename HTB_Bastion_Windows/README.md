@@ -6,7 +6,7 @@
 # HTB: Bastion (Windows)
 
 ### 📊 Difficulty: **Easy**
-### 📁 Category: 
+### 📁 Category: Privilege Escalation
 
 </div>
 
