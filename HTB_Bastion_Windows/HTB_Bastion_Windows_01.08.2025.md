@@ -12,7 +12,7 @@
     <td>HackTheBox - Bastion Windows</td>
   </tr>
   <tr>
-    <td><b>🧑‍💻 Author</b></td>
+    <td><b>👨‍💻 Author</b></td>
     <td><code><br>sonyahack1</br></code></td>
   </tr>
   <tr>
@@ -39,7 +39,7 @@
 
 ## Table of Contents
 
-- [Summary](#summary)
+- [Summary](#-summary)
 - [Reconnaissance](#%EF%B8%8F--reconnaissance)
 - [Initial Access](#-initial-access)
 - [Vertical Privilege Escalation](#%EF%B8%8F----vertical-privilege-escalation)
