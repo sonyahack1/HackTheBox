@@ -20,7 +20,7 @@ the software MRemoteNG is found to be installed which stores passwords insecurel
 ---
 
 > 💡 **Skills Required**
-- 
+- Basic Windows Enumeration
 
 > 🛠️ **Skills Learned**
-- 
+- Exploitation mRemoteNG
