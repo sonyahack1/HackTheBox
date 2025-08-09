@@ -7,27 +7,27 @@
 <div align="center">
 
 <table>
-  <tr>
+  <tr align="left" >
     <td><b>🎯 Target</b></td>
     <td>HackTheBox - Bastion Windows</td>
   </tr>
-  <tr>
+  <tr align="left" >
     <td><b>👨‍💻 Author</b></td>
     <td><code><br>sonyahack1</br></code></td>
   </tr>
-  <tr>
+  <tr align="left" >
     <td><b>📅 Date</b></td>
     <td>01.08.2025</td>
   </tr>
-  <tr>
+  <tr align="left" >
     <td><b>📊 Difficulty</b></td>
     <td>Easy</td>
   </tr>
-  <tr>
+  <tr align="left" >
     <td><b>📁 Category</b></td>
     <td>Privilege Escalation</td>
   </tr>
-  <tr>
+  <tr align="left" >
     <td><b>💻 Platform</b></td>
     <td>Windows</td>
   </tr>
