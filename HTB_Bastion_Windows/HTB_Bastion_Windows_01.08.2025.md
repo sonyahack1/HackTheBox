@@ -129,7 +129,7 @@ Discovered open port 49670/tcp on 10.10.10.134
 ```
 > Scanning shows a large number of open ports. I will highlight the most important ones for us:
 
-- `22 (ssh)` - исползуется для удаленного SSH подключения к системе;
+- `22 (ssh)` - used for remote SSH connection to the system;
 - `135 (msrpc)` - Remote procedure call service;
 - `139/445 (SMB)` - NetBIOS, NetLogon session service / file share access service;
 - `5985 (winrm)` - For remote connection to the system
