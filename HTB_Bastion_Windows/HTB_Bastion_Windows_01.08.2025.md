@@ -132,7 +132,7 @@ Discovered open port 49670/tcp on 10.10.10.134
 - `22 (ssh)` - used for remote SSH connection to the system;
 - `135 (msrpc)` - Remote procedure call service;
 - `139/445 (SMB)` - NetBIOS, NetLogon session service / file share access service;
-- `5985 (winrm)` - For remote connection to the system
+- `5985 (winrm)` - For remote connection to the system;
 
 
 > I'm trying to log in anonymously via `SMB`:
@@ -378,7 +378,7 @@ PS C:\Users\L4mpje\Desktop>
 </div>
 
 ---
-## 🔑⬆️  Vertical Privilege Escalatio
+## 🔑⬆️  ertical Privilege Escalation
 
 > The server has the program `mRemoteNG` installed in the directory `C:\Program Files (x86)`:
 
