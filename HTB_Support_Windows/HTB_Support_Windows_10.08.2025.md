@@ -515,7 +515,7 @@ Set-LocalUser -Name 'DC$' -Password (ConvertTo-SecureString "NewPass123!" -AsPla
 
 ---
 
-**Note**: `DCSync` - This is a technique where an attacker with DS-Replication-Get-Changes, DS-Replication-Get-Changes-All replication rights calls a
+`Note`: `DCSync` - This is a technique where an attacker with DS-Replication-Get-Changes, DS-Replication-Get-Changes-All replication rights calls a
 special DrsGetNCChanges function in the MS-DRSR (DRSUAPI) protocol and requests replication data from a domain controller. The domain controller trusts
 the attacker with these privileges and returns the requested data.
 
