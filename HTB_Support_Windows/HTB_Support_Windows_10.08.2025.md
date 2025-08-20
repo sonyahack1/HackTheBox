@@ -555,13 +555,14 @@ ad13eec04dfcb18df6af1cf0e178dfe5
 <table>
   <tr>
     <td align="center">
-      <b>🟢 Root flag</b>ad13eec04dfcb18df6af1cf0e178dfe5<br/>
-      <code></code>
+      <b>🟢 Root flag</b><br/>
+      <code>ad13eec04dfcb18df6af1cf0e178dfe5</code>
     </td>
   </tr>
 </table>
 
 </div>
+
 
 <p align="center">
  <img src="./screenshots/machine_pwned.png" alt="pwned" />
