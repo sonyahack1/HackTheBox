@@ -219,7 +219,7 @@ drw-rw-rw-          0  Sat May 28 07:18:25 2022 ..
 
 ---
 
-**Note:** Honestly, this archive `UserInfo.exe.zip` caught my eye as soon as I looked through the contents of the network share because I knew for sure
+`Note`: Honestly, this archive `UserInfo.exe.zip` caught my eye as soon as I looked through the contents of the network share because I knew for sure
 even without searching in Google that such a utility simply does not exist in official sources.
 
 ---
@@ -280,7 +280,7 @@ nth vaddr      bind type lib         name
 
 ---
 
-**Note:** `.NET` - It is a platform from Microsoft for developing and running applications primarily in the `C#` programming language.
+`Note`: `.NET` - It is a platform from Microsoft for developing and running applications primarily in the `C#` programming language.
 
 ---
 
@@ -343,8 +343,8 @@ completed, the original byte array is converted to a regular string `Encoding.De
 
 > The process of encrypting a password in the code is divided into two consecutive stages:
 
-- 1. The program takes the password and converts it into an array of bytes using a **double** `XOR` operation: the `armando` key and the `0xDF` constant
-- 2. the resulting code is encoded in base64.
+- 1 The program takes the password and converts it into an array of bytes using a **double** `XOR` operation: the `armando` key and the `0xDF` constant
+- 2 the resulting code is encoded in base64.
 
 > To decrypt the password, we use `CyberChef` and implement the reverse sequence of actions:
 
