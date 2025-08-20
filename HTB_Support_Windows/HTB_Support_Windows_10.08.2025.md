@@ -590,7 +590,7 @@ ad13eec04dfcb18df6af1cf0e178dfe5
 
 ---
 
-**Note:** The most difficult part of the whole process was the stage with decompiling the program `UserInfo.exe`. Since I don't know the programming language `C#` at all, it was quite difficult for me to
+`Note`: The most difficult part of the whole process was the stage with decompiling the program `UserInfo.exe`. Since I don't know the programming language `C#` at all, it was quite difficult for me to
 analyze the source code. I had to spend quite a bit of time before I figured out how the encryption algorithm works.
 
 ---
