@@ -343,8 +343,8 @@ completed, the original byte array is converted to a regular string `Encoding.De
 
 > The process of encrypting a password in the code is divided into two consecutive stages:
 
-- 1 The program takes the password and converts it into an array of bytes using a **double** `XOR` operation: the `armando` key and the `0xDF` constant
-- 2 the resulting code is encoded in base64.
+- `1)` The program takes the password and converts it into an array of bytes using a **double** `XOR` operation: the `armando` key and the `0xDF` constant
+- `2)` the resulting code is encoded in base64.
 
 > To decrypt the password, we use `CyberChef` and implement the reverse sequence of actions:
 
@@ -473,7 +473,7 @@ ac603aefe3f446533205f2bb9c890369
 
 ```bash
 
-sudo python3 bloodhound.py -u 'support' -p 'Ironside47pleasure40Watchful' -d support.htb --nameserver 10.10.11.174 -c ALL --zip -op support.htb
+sudo python3 bloodhound.py -u 'ldap' -p 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' -d support.htb --nameserver 10.10.11.174 -c ALL --zip -op support.htb
 
 ```
 
