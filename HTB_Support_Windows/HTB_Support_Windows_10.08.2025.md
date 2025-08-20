@@ -10,7 +10,7 @@
 <table>
   <tr>
     <td align="left" ><b>🎯 Target</b></td>
-    <td>Hack The Box - Support Windows</td>
+    <td>Hack The Box - Support</td>
   </tr>
   <tr>
     <td align="left" ><b>👨‍💻 Author</b></td>
@@ -341,8 +341,8 @@ grep -RniE 'Password|ConnectionString|DirectoryEntry|NetworkCredential|Aes|Prote
 
 > The process of encrypting a password in the code is divided into two consecutive stages:
 
-- 1) The program takes the password and converts it into an array of bytes using a **double** `XOR` operation: the `armando` key and the `0xDF` constant
-- 2) the resulting code is encoded in base64.
+- 1. The program takes the password and converts it into an array of bytes using a **double** `XOR` operation: the `armando` key and the `0xDF` constant
+- 2. the resulting code is encoded in base64.
 
 > To decrypt the password, we use `CyberChef` and implement the reverse sequence of actions:
 
