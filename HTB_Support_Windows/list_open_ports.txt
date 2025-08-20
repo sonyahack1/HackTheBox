@@ -1,0 +1,28 @@
+# Nmap 7.95 scan initiated Mon Aug 18 12:30:07 2025 as: /usr/lib/nmap/nmap -p- -vv -n -T5 --min-rate=500 -oN list_open_ports.txt support.htb
+Nmap scan report for support.htb (10.10.11.174)
+Host is up, received echo-reply ttl 127 (0.042s latency).
+Scanned at 2025-08-18 12:30:07 EDT for 69s
+Not shown: 65516 filtered tcp ports (no-response)
+PORT      STATE SERVICE          REASON
+53/tcp    open  domain           syn-ack ttl 127
+88/tcp    open  kerberos-sec     syn-ack ttl 127
+135/tcp   open  msrpc            syn-ack ttl 127
+139/tcp   open  netbios-ssn      syn-ack ttl 127
+389/tcp   open  ldap             syn-ack ttl 127
+445/tcp   open  microsoft-ds     syn-ack ttl 127
+464/tcp   open  kpasswd5         syn-ack ttl 127
+593/tcp   open  http-rpc-epmap   syn-ack ttl 127
+636/tcp   open  ldapssl          syn-ack ttl 127
+3268/tcp  open  globalcatLDAP    syn-ack ttl 127
+3269/tcp  open  globalcatLDAPssl syn-ack ttl 127
+5985/tcp  open  wsman            syn-ack ttl 127
+9389/tcp  open  adws             syn-ack ttl 127
+49664/tcp open  unknown          syn-ack ttl 127
+49667/tcp open  unknown          syn-ack ttl 127
+49674/tcp open  unknown          syn-ack ttl 127
+49678/tcp open  unknown          syn-ack ttl 127
+49702/tcp open  unknown          syn-ack ttl 127
+49740/tcp open  unknown          syn-ack ttl 127
+
+Read data files from: /usr/share/nmap
+# Nmap done at Mon Aug 18 12:31:16 2025 -- 1 IP address (1 host up) scanned in 68.49 seconds
