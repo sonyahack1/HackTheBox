@@ -239,6 +239,8 @@ even without searching in Google that such a utility simply does not exist in of
 
 unzip UserInfo.exe.zip
 
+```
+
 ```bash
 
 ls -alh
@@ -278,7 +280,7 @@ nth vaddr      bind type lib         name
 
 ---
 
-**Note:** `.NET` - It is a platform from Microsoft for developing and running applications primarily in the C# programming language.
+**Note:** `.NET` - It is a platform from Microsoft for developing and running applications primarily in the `C#` programming language.
 
 ---
 
@@ -330,12 +332,12 @@ grep -RniE 'Password|ConnectionString|DirectoryEntry|NetworkCredential|Aes|Prote
 
 ---
 
-> We have a string `0Nv32PTwgYjzg9/8j5TbmvPd3e7WhtWWyuPsyO76/Y+U193E` which contains an encrypted array of bytes in `base64` encoding.
-> using the `Convert.FromBase64String` method we decode this string and save its contents in `array`. The main encryption method is contained
-> in the `for (int i = 0; i < array.Length; i++)` loop. Each byte of encrypted data from the `array` array undergoes a double operation with `XOR`.
-> First, we cyclically iterate over the corresponding byte of the `armando` key, which was previously converted to the byte sequence `61 72 6d 61 6e 64 6f`
-> using the `Encoding.ASCII.GetBytes` method and stored in `key`. After that, we perform another `XOR` operation with the constant `0xDF`. After the loop is
-> completed, the original byte array is converted to a regular string `Encoding.Default.GetString(array2)` and the result is stored in `array2` as a regular password.
+We have a string `0Nv32PTwgYjzg9/8j5TbmvPd3e7WhtWWyuPsyO76/Y+U193E` which contains an encrypted array of bytes in `base64` encoding.
+using the `Convert.FromBase64String` method we decode this string and save its contents in `array`. The main encryption method is contained
+in the `for (int i = 0; i < array.Length; i++)` loop. Each byte of encrypted data from the `array` array undergoes a double operation with `XOR`.
+First, we cyclically iterate over the corresponding byte of the `armando` key, which was previously converted to the byte sequence `61 72 6d 61 6e 64 6f`
+using the `Encoding.ASCII.GetBytes` method and stored in `key`. After that, we perform another `XOR` operation with the constant `0xDF`. After the loop is
+completed, the original byte array is converted to a regular string `Encoding.Default.GetString(array2)` and the result is stored in `array2` as a regular password.
 
 ---
 
@@ -361,6 +363,13 @@ grep -RniE 'Password|ConnectionString|DirectoryEntry|NetworkCredential|Aes|Prote
 
 > The code clearly shows that the program, when executed, makes a request via `LDAP` using the `ldap` service account and substituting the same encrypted password
 > from the `Protected.cs` file that we just received.
+
+---
+
+**Note** In many organizations, administrators create and configure special accounts for applications or services that access Active Directory through LDAP. The purpose of such an account
+is to give the application access to information about users, groups, and computers.
+
+---
 
 > We check authorization using the received credentialsye - `ldap:nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz`:
 
