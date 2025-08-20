@@ -485,7 +485,7 @@ sudo python3 bloodhound.py -u 'ldap' -p 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' -
 
 ---
 
-**Note** `Generic All` - This is full control over the object including password reset. Our potential vector for `Privilege Escalation`.
+`Note`: `Generic All` - This is full control over the object including password reset. Our potential vector for `Privilege Escalation`.
 
 ---
 
