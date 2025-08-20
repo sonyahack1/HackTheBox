@@ -366,7 +366,7 @@ completed, the original byte array is converted to a regular string `Encoding.De
 
 ---
 
-**Note** In many organizations, administrators create and configure special accounts for applications or services that access Active Directory through LDAP. The purpose of such an account
+`Note`: In many organizations, administrators create and configure special accounts for applications or services that access Active Directory through LDAP. The purpose of such an account
 is to give the application access to information about users, groups, and computers.
 
 ---
