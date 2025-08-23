@@ -66,38 +66,38 @@
       <td>Reconnaissance and information gathering on the target system</td>
     </tr>
     <tr>
-      <td><b>TA0007</b> – Discovery</td>
-      <td><b>T1135</b> – Network Share Discovery</td>
+      <td align="left"><b>TA0007</b> – Discovery</td>
+      <td align="left"><b>T1135</b> – Network Share Discovery</td>
       <td>A non-standard network share with a custom program was found</td>
     </tr>
     <tr>
-      <td><b>TA0006</b> – Credential Access</td>
-      <td><b>T1552</b> – Unsecured Credentials</td>
+      <td align="left"><b>TA0006</b> – Credential Access</td>
+      <td align="left"><b>T1552</b> – Unsecured Credentials</td>
       <td>The password for the service account was obtained from the program source code</td>
     </tr>
     <tr>
-      <td><b>TA0007</b> – Discovery</td>
-      <td><b>T1087</b> – Account Discovery</td>
+      <td align="left"><b>TA0007</b> – Discovery</td>
+      <td align="left"><b>T1087</b> – Account Discovery</td>
       <td>Listing system users</td>
     </tr>
     <tr>
-      <td><b>TA0001</b> – Initial Access</td>
-      <td><b>T1078</b> – Valid Accounts</td>
+      <td align="left"><b>TA0001</b> – Initial Access</td>
+      <td align="left"><b>T1078</b> – Valid Accounts</td>
       <td>Login with valid credentials</td>
     </tr>
     <tr>
-      <td><b>TA0004</b> – Privilege Escalation</td>
-      <td><b>T1098</b> – Account Manipulation</td>
+      <td align="left"><b>TA0004</b> – Privilege Escalation</td>
+      <td align="left"><b>T1098</b> – Account Manipulation</td>
       <td>Reset password from account</td>
     </tr>
     <tr>
-      <td><b>TA0006</b> – Credential Access</td>
-      <td><b>T1003</b> – OS Credential Dumping</td>
+      <td align="left"><b>TA0006</b> – Credential Access</td>
+      <td align="left"><b>T1003</b> – OS Credential Dumping</td>
       <td>Extracting password hashes from the system</td>
     </tr>
     <tr>
-      <td><b>TA0008</b> – Lateral Movement</td>
-      <td><b>T1021</b> – Remote Services</td>
+      <td align="left"><b>TA0008</b> – Lateral Movement</td>
+      <td align="left"><b>T1021</b> – Remote Services</td>
       <td>Connecting via winrm using a valid account</td>
     </tr>
   </tbody>
