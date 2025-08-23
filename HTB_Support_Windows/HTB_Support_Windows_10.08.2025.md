@@ -39,7 +39,7 @@
 ---
 ## Table of Contents
 
-- [Summary](#-summary)
+- [Summary](#-attack-implemented)
 - [Reconnaissance](#%EF%B8%8F--reconnaissance)
 - [Initial Access](#-initial-access)
 - [Vertical Privilege Escalation](#%EF%B8%8F----vertical-privilege-escalation)
@@ -61,8 +61,8 @@
   </thead>
   <tbody>
     <tr>
-      <td><b>TA0043</b> – Reconnaissance</td>
-      <td><b>T1595</b> – Active Scanning</td>
+      <td align="left"><b>TA0043</b> – Reconnaissance</td>
+      <td align="left"><b>T1595</b> – Active Scanning</td>
       <td>Reconnaissance and information gathering on the target system</td>
     </tr>
     <tr>
@@ -606,11 +606,6 @@ ad13eec04dfcb18df6af1cf0e178dfe5
 </table>
 
 </div>
-
-
-<p align="center">
- <img src="./screenshots/machine_pwned.png" alt="pwned" />
-</p>
 
 ---
 ## 🧠 Conclusion
