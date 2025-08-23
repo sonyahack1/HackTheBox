@@ -50,39 +50,72 @@
 
 <div align="center">
 
+<table width="100%">
+  <thead>
+    <tr>
+      <th>Tactics</th>
+      <th>Techniques</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>TA0043</b> – Reconnaissance</td>
+      <td><b>T1595</b> – Active Scanning</td>
+      <td>Reconnaissance and information gathering on the target system</td>
+    </tr>
+    <tr>
+      <td><b>TA0007</b> – Discovery</td>
+      <td><b>T1135</b> – Network Share Discovery</td>
+      <td>A non-standard network share with a custom program was found</td>
+    </tr>
+    <tr>
+      <td><b>TA0006</b> – Credential Access</td>
+      <td><b>T1552</b> – Unsecured Credentials</td>
+      <td>The password for the service account was obtained from the program source code</td>
+    </tr>
+    <tr>
+      <td><b>TA0007</b> – Discovery</td>
+      <td><b>T1087</b> – Account Discovery</td>
+      <td>Listing system users</td>
+    </tr>
+    <tr>
+      <td><b>TA0001</b> – Initial Access</td>
+      <td><b>T1078</b> – Valid Accounts</td>
+      <td>Login with valid credentials</td>
+    </tr>
+    <tr>
+      <td><b>TA0004</b> – Privilege Escalation</td>
+      <td><b>T1098</b> – Account Manipulation</td>
+      <td>Reset password from account</td>
+    </tr>
+    <tr>
+      <td><b>TA0006</b> – Credential Access</td>
+      <td><b>T1003</b> – OS Credential Dumping</td>
+      <td>Extracting password hashes from the system</td>
+    </tr>
+    <tr>
+      <td><b>TA0008</b> – Lateral Movement</td>
+      <td><b>T1021</b> – Remote Services</td>
+      <td>Connecting via winrm using a valid account</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
 <table>
   <tr>
-    <th>Stage</th>
-    <th>Info</th>
-  </tr>
-  <tr>
-    <td><b>User Flag</b></td>
+    <th>User Flag</th>
     <td><code>flag{ac603aefe3f446533205f2bb9c890369}</code></td>
   </tr>
   <tr>
-    <td><b>Root Flag</b></td>
+    <th>Root Flag</th>
     <td><code>flag{ad13eec04dfcb18df6af1cf0e178dfe5}</code></td>
-  </tr>
-  <tr>
-    <td><b>Techniques (MITRE ATT&CK):</b></td>
-    <td align="left">
-      <ul>
-        <li><code> 1) `TA0043 -> T1595 - Active Scanning`</code></li>
-        <li><code> 2) `TA0007 -> T1135 - Network Share Discovery`</code></li>
-        <li><code> 3) `TA0006 -> T1552 - Unsecured Credentials`</code></li>
-        <li><code> 4) `TA0007 -> T1087 - Account Discovery`</code></li>
-        <li><code> 5) `TA0006 -> T1552 - Unsecured Credentials`</code></li>
-        <li><code> 6) `TA0001 -> T1078 - Valid Accounts`</code></li>
-        <li><code> 7) `TA0004 -> T1098 - Account Manipulation`</code></li>
-        <li><code> 8) `TA0006 -> T1003 - OS Credential Dumping`</code></li>
-        <li><code> 9) `TA0008 -> T1021 - Remote Services`</code></li>
-      </ul>
-    </td>
   </tr>
 </table>
 
 </div>
-
 ---
 
 > Adding the machine's IP address to `/etc/hosts`:
@@ -218,8 +251,8 @@ drw-rw-rw-          0  Sat May 28 07:18:25 2022 ..
 > I see a set of programs for system administrators and technical support. But one of them is a custom implementation - `UserInfo.exe.zip`.
 
 ---
-
-`Note`: Honestly, this archive `UserInfo.exe.zip` caught my eye as soon as I looked through the contents of the network share because I knew for sure
+> [!IMPORTANT]
+Honestly, this archive `UserInfo.exe.zip` caught my eye as soon as I looked through the contents of the network share because I knew for sure
 even without searching in Google that such a utility simply does not exist in official sources.
 
 ---
