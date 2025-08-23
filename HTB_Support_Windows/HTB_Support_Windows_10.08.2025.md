@@ -120,6 +120,8 @@
 
 ---
 
+<h2 align="center"> 📝 Report</h2>
+
 > Adding the machine's IP address to `/etc/hosts`:
 
 ```bash
