@@ -46,7 +46,8 @@
 - [Conclusion](#-conclusion)
 
 ---
-## 🧾 Summary
+
+<h2 align="center">🧾 Attack Implemented</h2>
 
 <div align="center">
 
@@ -116,6 +117,7 @@
 </table>
 
 </div>
+
 ---
 
 > Adding the machine's IP address to `/etc/hosts`:
@@ -364,7 +366,7 @@ grep -RniE 'Password|ConnectionString|DirectoryEntry|NetworkCredential|Aes|Prote
 > This algorithm is responsible for storing and decrypting the password. **In simple terms, the logic of this code is as follows**:
 
 ---
-
+> [!IMPORTANT]
 We have a string `0Nv32PTwgYjzg9/8j5TbmvPd3e7WhtWWyuPsyO76/Y+U193E` which contains an encrypted array of bytes in `base64` encoding.
 using the `Convert.FromBase64String` method we decode this string and save its contents in `array`. The main encryption method is contained
 in the `for (int i = 0; i < array.Length; i++)` loop. Each byte of encrypted data from the `array` array undergoes a double operation with `XOR`.
@@ -398,8 +400,8 @@ completed, the original byte array is converted to a regular string `Encoding.De
 > from the `Protected.cs` file that we just received.
 
 ---
-
-`Note`: In many organizations, administrators create and configure special accounts for applications or services that access Active Directory through LDAP. The purpose of such an account
+> [!IMPORTANT]
+In many organizations, administrators create and configure special accounts for applications or services that access Active Directory through LDAP. The purpose of such an account
 is to give the application access to information about users, groups, and computers.
 
 ---
@@ -517,8 +519,8 @@ sudo python3 bloodhound.py -u 'ldap' -p 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' -
 > From the graph we see that the group has the `Generic All` privilege over the `dc.support.htb` object
 
 ---
-
-`Note`: `Generic All` - This is full control over the object including password reset. Our potential vector for `Privilege Escalation`.
+> [!IMPORTANT]
+`Generic All` - This is full control over the object including password reset. Our potential vector for `Privilege Escalation`.
 
 ---
 
@@ -547,8 +549,8 @@ Set-LocalUser -Name 'DC$' -Password (ConvertTo-SecureString "NewPass123!" -AsPla
 > via the `MS-DRSR` replication protocol which is used to replicate data between `Domain Controllers` using the `DCSync` technique.
 
 ---
-
-`Note`: `DCSync` - This is a technique where an attacker with DS-Replication-Get-Changes, DS-Replication-Get-Changes-All replication rights calls a
+> [!IMPORTANT]
+`DCSync` - This is a technique where an attacker with DS-Replication-Get-Changes, DS-Replication-Get-Changes-All replication rights calls a
 special DrsGetNCChanges function in the MS-DRSR (DRSUAPI) protocol and requests replication data from a domain controller. The domain controller trusts
 the attacker with these privileges and returns the requested data.
 
@@ -622,8 +624,8 @@ ad13eec04dfcb18df6af1cf0e178dfe5
 > complete compromise of the system.
 
 ---
-
-`Note`: The most difficult part of the whole process was the stage with decompiling the program `UserInfo.exe`. Since I don't know the programming language `C#` at all, it was quite difficult for me to
+> [!NOTE]
+The most difficult part of the whole process was the stage with decompiling the program `UserInfo.exe`. Since I don't know the programming language `C#` at all, it was quite difficult for me to
 analyze the source code. I had to spend quite a bit of time before I figured out how the encryption algorithm works.
 
 ---
