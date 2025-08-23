@@ -39,7 +39,7 @@
 ---
 ## Table of Contents
 
-- [Summary](#-attack-implemented)
+- [Summary](#-%EF%B8%8F--attack-implemented)
 - [Reconnaissance](#%EF%B8%8F--reconnaissance)
 - [Initial Access](#-initial-access)
 - [Vertical Privilege Escalation](#%EF%B8%8F----vertical-privilege-escalation)
@@ -316,8 +316,8 @@ nth vaddr      bind type lib         name
 > From the result we see that the function is imported from the `mscoree.dll` library. This confirms the fact that this is a `.NET` assembly.
 
 ---
-
-`Note`: `.NET` - It is a platform from Microsoft for developing and running applications primarily in the `C#` programming language.
+> [!IMPORTANT]
+`.NET` - It is a platform from Microsoft for developing and running applications primarily in the `C#` programming language.
 
 ---
 
