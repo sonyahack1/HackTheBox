@@ -1163,7 +1163,6 @@ With access to `fs01$`, and leveraging the `ReadGMSAPassword privilege`, the `NT
 Using the `AddSelf` permission, the `gmsa01$` account was added to the `ServiceManagers` group, which had `GenericAll` privileges over three service accounts. Leveraging this, the `svc_sql`
 account was modified by reactivating it and assigning a `SPN`. This setup enabled a `Kerberoasting` attack, resulting in the extraction of a `Kerberos TGS hash`, which was successfully
 cracked to reveal the password for the `C.Neri` user account, providing `Initial Access` to the system via the `WinRM`.
-
 Further enumeration revealed saved credentials for the user `C.Neri_adm` via the `cmdkey` utility. This account was a member of the `DelegatedAdmins` group. Using `svc_sql`, and leveraging
 the privileges of `C.Neri_adm`, a `Resource-Based Constrained Delegation` attack was carried out. This allowed the attacker to `impersonate` the domain administrator account `L.BIANCHI_ADM`,
 ultimately leading to `full domain compromise`.
