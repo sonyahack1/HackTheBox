@@ -40,7 +40,7 @@
 
 - [Summary](#-%EF%B8%8F--attack-implemented)
 - [Reconnaissance](#%EF%B8%8F--reconnaissance)
-- [Kerberoasting](#rerberoasting)
+- [Kerberoasting](#kerberoasting)
 - [Initial Access](#-initial-access)
 - [Vertical Privilege Escalation](#%EF%B8%8F----vertical-privilege-escalation)
 - [RBCD](#rbcd)
@@ -401,7 +401,7 @@ SMB         dc01.vintage.htb 445    dc01             [+] vintage.htb\gmsa01$:6fa
 > I continue the attack chain and look at what privileges `gmsa01` has:
 
 <p align="center">
- <img src="./screenshots/addlelf.png" alt="addself" />
+ <img src="./screenshots/addself.png" alt="addself" />
 </p>
 
 > I see `AddSelf` rights over the `ServiceManagers` group. This group in turn has full rights (`GenericAll`) over three service accounts.
@@ -676,6 +676,8 @@ vintage\c.neri
     </td>
   </tr>
 </table>
+
+</div>
 
 ---
 ## 🔑⬆️    Vertical Privilege Escalation
@@ -1148,6 +1150,7 @@ C:\Users\Administrator\Desktop>
   </tr>
 </table>
 
+</div>
 
 ---
 ## 🧠 Conclusion
