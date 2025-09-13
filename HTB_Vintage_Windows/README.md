@@ -19,6 +19,7 @@
 <p align="center">
 Further enumeration revealed saved credentials for the user `C.Neri_adm` via the `cmdkey` utility. This account was a member of the `DelegatedAdmins` group. Using `svc_sql`, and leveraging the privileges of `C.Neri_adm`, a `Resource-Based Constrained Delegation` attack was carried out. This allowed the attacker to `impersonate` the domain administrator account `L.BIANCHI_ADM`, ultimately leading to `full domain compromise`.
 </p>
+
 ---
 
 > 💡 **Skills Required**
