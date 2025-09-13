@@ -12,6 +12,8 @@
 
 ---
 
+<div align="center">
+
 🔎 During the compromise of the `dc01.vintage.htb` system, a series of attacks were carried out based on misconfigured object permissions within the `Active Directory` environment.
 Starting with a low-privileged user account `P.Rosa`, reconnaissance was performed, revealing the presence of the `Pre-Windows 2000 Compatible Access` group, which included the host
 `fs01$` as a member, using a predictable (`username = password`) credential configuration. With access to `fs01$`, and leveraging the `ReadGMSAPassword` privilege, the `NTLM hash` of
@@ -23,6 +25,8 @@ to the system via the `WinRM`.
 Further enumeration revealed saved credentials for the user `C.Neri_adm` via the `cmdkey` utility. This account was a member of the `DelegatedAdmins` group. Using `svc_sql`, and leveraging
 the privileges of `C.Neri_adm`, a `Resource-Based Constrained Delegation` attack was carried out. This allowed the attacker to `impersonate` the domain administrator account `L.BIANCHI_ADM`,
 ultimately leading to `full domain compromise`.
+
+</div>
 
 
 ---
