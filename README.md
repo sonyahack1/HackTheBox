@@ -46,6 +46,6 @@ This repository should be used `only for ethical purposes`: to protect your own 
   &#8287;&#8287;&#8287;&#8287;&#8287;
  <a href="https://dev.to/sonyahack1"><img width="32px" alt="dev.to" title="sonyahack1 dev.to" src="https://i.imgur.com/mVm29vK.png"></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
- <a href="https://t.me/sonyahack1"><img width="32px" alt="telegram" title="sonyahack1 telegram" src="https://github.com/sonyahack1/sonyahack1/blob/main/logo/tg-icon.svg"></a>
+ <a href="https://t.me/sonyahack1"><img width="32px" alt="telegram" title="sonyahack1 telegram" src="https://github.com/sonyahack1/sonyahack1/blob/main/logo/telegram-icon.svg"></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
 </p>
