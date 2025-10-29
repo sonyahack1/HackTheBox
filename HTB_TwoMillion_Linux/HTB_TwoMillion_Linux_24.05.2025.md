@@ -20,7 +20,7 @@
 - [Entry Point](#-entry-point)
 - [Initial Access](#-initial-access)
 - [Horizontal Privilege Escalation](#%EF%B8%8F-horizontal-privilege-escalation)
-- [Vertical Privilege Escalation](#%EF%B8%8F--vertical-privilege-escalation)
+- [Vertical Privilege Escalation](%EF%B8%8F‍--vertical-privilege-escalation)
 - [CVE-2023-0386 - Linux Kernel](#-cve-2023-0386---linux-kernel)
 - [Conclusion](#-conclusion)
 
