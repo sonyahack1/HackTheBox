@@ -20,7 +20,7 @@
 - [Reconnaissance](#%EF%B8%8F--reconnaissance)
 - [Horizontal Privilege Escalation](#%EF%B8%8F-horizontal-privilege-escalation)
 - [Shadow Credentials](#-shadow-credentials)
-- [Vertical Privilege Escalation](#%EF%B8%8F-vertical-privilege-escalation)
+- [Vertical Privilege Escalation](#%EF%B8%8F‍-vertical-privilege-escalation)
 - [ESC-9](#-esc-9)
 - [Conclusion](#-conclusion)
 
